@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>日本の島ガチャ【レアリティ機能付き】</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "M PLUS Rounded 1c", sans-serif;
+      }
+      .card-reveal {
+        animation: reveal 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+      @keyframes reveal {
+        0% {
+          transform: scale(0.95);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      .gacha-button {
+        transition: all 0.3s ease;
+      }
+      .gacha-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      .gacha-button:active {
+        transform: translateY(1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 8px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, 0.4);
+      }
+      .modal-enter {
+        animation: fadeIn 0.3s ease;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* SSR背景のアニメーション */
+      @keyframes rainbow-flow {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      /* レアリティごとの背景スタイル */
+      .rarity-n-bg {
+        background-color: #f8fafc; /* slate-50 */
+      }
+      .rarity-r-bg {
+        background: linear-gradient(135deg, #d1fae5, #ffffff); /* green-100 to white */
+      }
+      .rarity-sr-bg {
+        background: linear-gradient(135deg, #fef08a, #fef9c3); /* yellow-200 to yellow-100 */
+      }
+      .rarity-ssr-bg {
+        background: linear-gradient(-45deg, #fbcfe8, #a5b4fc, #81e6d9, #fef08a);
+        background-size: 400% 400%;
+        animation: rainbow-flow 8s ease infinite;
+      }
+
+      .rarity-n-text {
+        color: #64748b;
+      } /* slate-500 */
+      .rarity-r-text {
+        color: #059669;
+      } /* green-600 */
+      .rarity-sr-text {
+        color: #b45309;
+      } /* amber-700 */
+      .rarity-ssr-text {
+        color: white;
+        font-weight: 900;
+        text-shadow: 0 0 8px #ffd700, 2px 2px 4px rgba(0, 0, 0, 0.6);
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-b from-sky-300 to-blue-500 min-h-screen flex items-center justify-center p-4">
+    <div class="w-full max-w-md mx-auto text-center">
+      <header class="mb-8">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white text-shadow-lg"><span class="text-yellow-300">日本の島</span>ガチャ</h1>
+        <p class="text-white mt-2 font-medium">今日の島はどこだ？【レアリティ機能付き】</p>
+      </header>
+
+      <main id="result-card" class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-6 min-h-[300px] flex flex-col justify-center items-center transition-all duration-300 relative">
+        <div id="initial-state" class="text-center">
+          <div class="text-6xl mb-4 animate-bounce">🏝️</div>
+          <p class="text-xl font-bold text-gray-700">ボタンを押して<br />ガチャを引いてみよう！</p>
+        </div>
+        <div id="result-state" class="hidden text-center w-full h-full">
+          <p id="rarity-display" class="font-bold text-2xl mb-2"></p>
+          <div id="new-badge" class="absolute top-2 right-2 bg-pink-500 text-white font-bold text-xs py-1 px-3 rounded-full transform rotate-12 hidden">NEW!</div>
+          <h2 id="island-name" class="text-4xl font-bold text-gray-800 mb-1"></h2>
+          <p id="island-prefecture" class="text-lg font-semibold text-sky-600 mb-4"></p>
+          <p id="island-description" class="text-base text-gray-600 mb-6 h-24 overflow-y-auto custom-scrollbar"></p>
+          <a id="map-link" href="#" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-500 text-white font-bold py-2 px-6 rounded-full hover:bg-blue-600 transition-colors"> 地図で見る 🗺️ </a>
+        </div>
+      </main>
+
+      <footer class="mt-8">
+        <button id="gacha-button" class="gacha-button bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-bold text-2xl py-4 px-10 rounded-full shadow-lg">ガチャを引く！</button>
+      </footer>
+
+      <section class="mt-10 w-full max-w-md mx-auto">
+        <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-6">
+          <h3 class="text-2xl font-bold text-gray-700 mb-4 text-center">コレクション (<span id="collection-count">0</span> / <span id="total-count">0</span>)</h3>
+          <div id="collection-grid" class="custom-scrollbar grid grid-cols-3 sm:grid-cols-4 gap-2 text-center max-h-48 overflow-y-auto p-1"></div>
+          <button id="reset-collection-button" class="mt-4 w-full bg-red-500 text-white font-bold py-2 px-4 rounded-full hover:bg-red-600 transition-colors text-sm">コレクションをリセット</button>
+        </div>
+      </section>
+    </div>
+
+    <div id="confirm-modal" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50 modal-enter">
+      <div class="bg-white rounded-2xl shadow-xl p-8 max-w-sm w-full text-center">
+        <h4 class="text-xl font-bold text-gray-800 mb-2">確認</h4>
+        <p class="text-gray-600 mb-6">本当にコレクションをリセットしますか？<br />この操作は元に戻せません。</p>
+        <div class="flex justify-center gap-4">
+          <button id="cancel-reset-button" class="bg-gray-200 text-gray-800 font-bold py-2 px-6 rounded-full hover:bg-gray-300 transition-colors">いいえ</button>
+          <button id="confirm-reset-button" class="bg-red-500 text-white font-bold py-2 px-6 rounded-full hover:bg-red-600 transition-colors">はい、リセットします</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // 日本の島データ（レアリティ付き）
+      const islands = [
+        // SSR
+        { name: "沖ノ島", prefecture: "福岡県", description: "島全体が宗像大社の神領で、「神の島」と呼ばれる。女人禁制など厳しい掟があり、2017年に世界遺産に登録。", lat: 34.24, lon: 130.1, rarity: "SSR" },
+        { name: "青ヶ島", prefecture: "東京都", description: "二重カルデラという世界的にも珍しい地形を持つ有人島。「日本の秘境」とも呼ばれます。", lat: 32.45, lon: 139.76, rarity: "SSR" },
+        { name: "軍艦島 (端島)", prefecture: "長崎県", description: "かつて炭鉱で栄えた無人島。その独特の景観から世界文化遺産に登録されています。", lat: 32.62, lon: 129.73, rarity: "SSR" },
+        { name: "南鳥島", prefecture: "東京都", description: "日本の最東端に位置する島。一般人の上陸は原則として許可されていません。", lat: 24.28, lon: 153.98, rarity: "SSR" },
+        { name: "沖ノ鳥島", prefecture: "東京都", description: "日本の最南端に位置する島。満潮時にはほとんどが海面下に沈むため、護岸工事で守られています。", lat: 20.42, lon: 136.08, rarity: "SSR" },
+        // SR
+        { name: "屋久島", prefecture: "鹿児島県", description: "樹齢数千年の縄文杉が有名。世界自然遺産にも登録されている神秘的な島です。", lat: 30.35, lon: 130.52, rarity: "SR" },
+        { name: "小笠原諸島 (父島)", prefecture: "東京都", description: "「東洋のガラパゴス」とも呼ばれる独自の生態系を持つ。ホエールウォッチングやドルフィンスイムが人気。", lat: 27.09, lon: 142.19, rarity: "SR" },
+        { name: "利尻島", prefecture: "北海道", description: "「利尻富士」とも呼ばれる美しい利尻山がそびえる島。ウニなどの海産物も絶品です。", lat: 45.18, lon: 141.21, rarity: "SR" },
+        { name: "与那国島", prefecture: "沖縄県", description: "日本最西端の島。海底遺跡ミステリーや、巨大なガ「ヨナグニサン」で知られています。", lat: 24.46, lon: 122.98, rarity: "SR" },
+        { name: "佐渡島", prefecture: "新潟県", description: "かつては金の島として栄えました。トキの野生復帰プロジェクトでも知られています。", lat: 38.03, lon: 138.35, rarity: "SR" },
+        { name: "西表島", prefecture: "沖縄県", description: "島の90%がジャングルに覆われた「東洋のガラパゴス」。特別天然記念物イリオモテヤマネコが生息。", lat: 24.33, lon: 123.83, rarity: "SR" },
+        { name: "友ヶ島", prefecture: "和歌山県", description: "旧日本軍の要塞跡が残る無人島群。レンガ造りの砲台跡が「ラピュタのようだ」と人気です。", lat: 34.28, lon: 135.0, rarity: "SR" },
+        { name: "大久野島", prefecture: "広島県", description: "「うさぎの島」として知られ、たくさんの野生のうさぎと触れ合えます。かつては毒ガス工場があった歴史も。", lat: 34.31, lon: 132.99, rarity: "SR" },
+        { name: "波照間島", prefecture: "沖縄県", description: "有人島としては日本最南端。「ハテルマブルー」と呼ばれる美しい海と、南十字星が見えることで有名。", lat: 24.05, lon: 123.77, rarity: "SR" },
+        // R
+        { name: "礼文島", prefecture: "北海道", description: "「花の浮島」として知られ、300種類以上の高山植物が咲き誇ります。", lat: 45.38, lon: 141.04, rarity: "R" },
+        { name: "厳島 (宮島)", prefecture: "広島県", description: "海に浮かぶ大鳥居で有名な厳島神社があります。日本三景の一つに数えられる景勝地です。", lat: 34.29, lon: 132.32, rarity: "R" },
+        { name: "直島", prefecture: "香川県", description: "アートの島として世界的に有名。草間彌生の「赤かぼちゃ」など、屋外アートが点在します。", lat: 34.45, lon: 133.99, rarity: "R" },
+        { name: "竹富島", prefecture: "沖縄県", description: "赤い瓦屋根の伝統的な集落と、水牛車での観光が有名。星砂の浜も人気スポットです。", lat: 24.32, lon: 124.08, rarity: "R" },
+        { name: "小豆島", prefecture: "香川県", description: "オリーブの栽培が盛んで、「エンジェルロード」は恋人たちの聖地として人気です。", lat: 34.48, lon: 134.25, rarity: "R" },
+        { name: "種子島", prefecture: "鹿児島県", description: "鉄砲伝来の地として歴史に名を刻む一方、日本最大のロケット発射場があります。", lat: 30.58, lon: 130.97, rarity: "R" },
+        { name: "奄美大島", prefecture: "鹿児島県", description: "アマミノクロウサギなど希少な固有種が生息する自然豊かな島。独特の島唄や大島紬も有名。", lat: 28.28, lon: 129.48, rarity: "R" },
+        { name: "宮古島", prefecture: "沖縄県", description: "「宮古ブルー」と称される透明度の高い海が魅力。伊良部大橋など絶景のドライブコースも人気。", lat: 24.76, lon: 125.33, rarity: "R" },
+        { name: "石垣島", prefecture: "沖縄県", description: "八重山諸島の玄関口。川平湾の美しい景色や、マングローブの森など豊かな自然が広がります。", lat: 24.34, lon: 124.15, rarity: "R" },
+        { name: "猿島", prefecture: "神奈川県", description: "東京湾に浮かぶ唯一の自然島。旧日本軍の要塞跡が残り、ラピュタのような世界が広がります。", lat: 35.29, lon: 139.66, rarity: "R" },
+        { name: "江の島", prefecture: "神奈川県", description: "湘南を代表する観光地。江島神社やシーキャンドルなど見どころ多数。", lat: 35.3, lon: 139.48, rarity: "R" },
+        { name: "角島", prefecture: "山口県", description: "エメラルドグリーンの海に架かる角島大橋の絶景で有名。多くの映画やCMのロケ地になっています。", lat: 34.35, lon: 130.84, rarity: "R" },
+        { name: "柏島", prefecture: "高知県", description: "船が宙に浮いて見えるほど透明度の高い海が魅力。日本有数のダイビングスポットです。", lat: 32.76, lon: 132.63, rarity: "R" },
+        { name: "田代島", prefecture: "宮城県", description: "「猫の島」として有名で、多くの猫が自由に暮らしています。猫神社もあります。", lat: 38.29, lon: 141.41, rarity: "R" },
+        { name: "青島", prefecture: "愛媛県", description: "住民の数より猫の数がはるかに多い「猫の楽園」として世界的に有名になりました。", lat: 33.82, lon: 132.46, rarity: "R" },
+        // N (上記以外すべて)
+        { name: "奥尻島", prefecture: "北海道", description: "1993年の北海道南西沖地震からの復興を遂げた島。ウニの味が良いことで有名。", lat: 42.16, lon: 139.46, rarity: "N" },
+        { name: "蕪島", prefecture: "青森県", description: "ウミネコの繁殖地として国の天然記念物に指定されています。陸続きの島です。", lat: 40.52, lon: 141.56, rarity: "N" },
+        { name: "金華山", prefecture: "宮城県", description: "島全体が黄金山神社の神域とされ、鹿が生息。「3年続けてお参りすればお金に困らない」という言い伝えも。", lat: 38.29, lon: 141.56, rarity: "N" },
+        { name: "飛島", prefecture: "山形県", description: "渡り鳥の中継地としてバードウォッチングが盛ん。山形県唯一の有人離島です。", lat: 39.2, lon: 139.56, rarity: "N" },
+        { name: "沖ノ島", prefecture: "千葉県", description: "南房総に位置し、砂州で陸続きになっている島。多様な海岸生物が観察できます。", lat: 34.97, lon: 139.85, rarity: "N" },
+        { name: "八丈島", prefecture: "東京都", description: "「八丈富士」と「三原山」の2つの火山からなる島。温泉や島寿司が楽しめます。", lat: 33.1, lon: 139.79, rarity: "N" },
+        { name: "粟島", prefecture: "新潟県", description: "「粟島浦村」として一つの村をなす島。馬がのんびりと草を食む牧歌的な風景が見られます。", lat: 38.45, lon: 139.24, rarity: "N" },
+        { name: "能登島", prefecture: "石川県", description: "能登半島と2つの橋で結ばれた島。水族館やガラス美術館などがあります。", lat: 37.1, lon: 136.98, rarity: "N" },
+        { name: "水島", prefecture: "福井県", description: "敦賀湾に浮かぶ無人島。透明度の高い海と白い砂浜から「北陸のハワイ」と呼ばれています。", lat: 35.73, lon: 136.0, rarity: "N" },
+        { name: "初島", prefecture: "静岡県", description: "首都圏から最も近い離島。リゾート施設が充実しており、手軽に島時間を楽しめます。", lat: 35.03, lon: 139.17, rarity: "N" },
+        { name: "日間賀島", prefecture: "愛知県", description: "「タコとフグの島」として有名。島の西港と東港には巨大なタコのモニュメントがあります。", lat: 34.7, lon: 136.98, rarity: "N" },
+        { name: "佐久島", prefecture: "愛知県", description: "アートの島として知られ、島のあちこちにアート作品が展示されています。", lat: 34.72, lon: 137.04, rarity: "N" },
+        { name: "答志島", prefecture: "三重県", description: "鳥羽港の沖合に浮かぶ、伊勢湾で最大の島。新鮮な海の幸と、独特の寝屋子制度で知られます。", lat: 34.52, lon: 136.86, rarity: "N" },
+        { name: "賢島", prefecture: "三重県", description: "英虞湾に浮かぶ、伊勢志摩観光の拠点。2016年にはG7伊勢志摩サミットが開催されました。", lat: 34.31, lon: 136.82, rarity: "N" },
+        { name: "沖島", prefecture: "滋賀県", description: "琵琶湖に浮かぶ日本で唯一の淡水湖にある有人島。島民の主な交通手段は自転車です。", lat: 35.21, lon: 136.05, rarity: "N" },
+        { name: "淡路島", prefecture: "兵庫県", description: "国生み神話ゆかりの島。玉ねぎの生産が盛んで、明石海峡大橋で本州と結ばれています。", lat: 34.45, lon: 134.8, rarity: "N" },
+        { name: "大三島", prefecture: "愛媛県", description: "「神の島」と呼ばれ、国宝の甲冑の約8割を所蔵する大山祇神社があります。しまなみ海道の島のひとつ。", lat: 34.24, lon: 133.0, rarity: "N" },
+        { name: "高島", prefecture: "佐賀県", description: "唐津市の沖に浮かぶ島。「宝当神社」があり、宝くじ当選のご利益があるとして多くの参拝者が訪れます。", lat: 33.49, lon: 129.97, rarity: "N" },
+        { name: "対馬", prefecture: "長崎県", description: "韓国まで約50kmの国境の島。独自の生態系と、古代からの歴史的な交流の跡が残っています。", lat: 34.25, lon: 129.28, rarity: "N" },
+        { name: "壱岐島", prefecture: "長崎県", description: "「魏志倭人伝」にも登場する歴史ある島。麦焼酎発祥の地とも言われています。", lat: 33.78, lon: 129.72, rarity: "N" },
+        { name: "福江島", prefecture: "長崎県", description: "五島列島の南西端に位置する最大の島。美しい教会群や、透き通った高浜海水浴場が有名。", lat: 32.68, lon: 128.84, rarity: "N" },
+        { name: "天草下島", prefecture: "熊本県", description: "天草諸島で最大の島。キリシタンの歴史が色濃く残り、イルカウォッチングも楽しめます。", lat: 32.37, lon: 130.1, rarity: "N" },
+        { name: "姫島", prefecture: "大分県", description: "黒曜石の産地として知られ、独特の盆踊り「姫島盆踊り」が有名です。", lat: 33.72, lon: 131.68, rarity: "N" },
+        { name: "青島", prefecture: "宮崎県", description: "「鬼の洗濯板」と呼ばれる奇岩に囲まれた島。亜熱帯植物が茂る島内には青島神社があります。", lat: 31.8, lon: 131.47, rarity: "N" },
+        { name: "与論島", prefecture: "鹿児島県", description: "「東洋の真珠」と称される美しい島。干潮時にだけ現れる砂浜「百合ヶ浜」は絶景です。", lat: 27.03, lon: 128.42, rarity: "N" },
+        { name: "沖縄本島", prefecture: "沖縄県", description: "沖縄県の中心で、那覇市や美しいビーチ、世界遺産の首里城跡など見どころが満載。", lat: 26.33, lon: 127.8, rarity: "N" },
+      ];
+
+      // DOM Elements
+      const gachaButton = document.getElementById("gacha-button");
+      const resultCard = document.getElementById("result-card");
+      const initialState = document.getElementById("initial-state");
+      const resultState = document.getElementById("result-state");
+      const rarityDisplay = document.getElementById("rarity-display");
+      const islandName = document.getElementById("island-name");
+      const islandPrefecture = document.getElementById("island-prefecture");
+      const islandDescription = document.getElementById("island-description");
+      const mapLink = document.getElementById("map-link");
+      const newBadge = document.getElementById("new-badge");
+
+      // Collection Elements
+      const collectionGrid = document.getElementById("collection-grid");
+      const collectionCount = document.getElementById("collection-count");
+      const totalCount = document.getElementById("total-count");
+      const resetCollectionButton = document.getElementById("reset-collection-button");
+
+      // Modal Elements
+      const confirmModal = document.getElementById("confirm-modal");
+      const confirmResetButton = document.getElementById("confirm-reset-button");
+      const cancelResetButton = document.getElementById("cancel-reset-button");
+
+      let collectedIslands = [];
+      const STORAGE_KEY = "islandGachaCollection";
+
+      // --- Gacha Logic ---
+      function drawGacha() {
+        const rarityTable = { SSR: 0.05, SR: 0.1, R: 0.2, N: 0.65 };
+        const rand = Math.random();
+        let cumulativeProb = 0;
+        let selectedRarity = "N";
+
+        for (const rarity in rarityTable) {
+          cumulativeProb += rarityTable[rarity];
+          if (rand < cumulativeProb) {
+            selectedRarity = rarity;
+            break;
+          }
+        }
+
+        const islandsOfRarity = islands.filter((i) => i.rarity === selectedRarity);
+        const randomIndex = Math.floor(Math.random() * islandsOfRarity.length);
+        return islandsOfRarity[randomIndex];
+      }
+
+      // --- Collection Functions ---
+      function loadCollection() {
+        const data = localStorage.getItem(STORAGE_KEY);
+        collectedIslands = data ? JSON.parse(data) : [];
+      }
+
+      function saveCollection() {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(collectedIslands));
+      }
+
+      function renderCollection() {
+        collectionGrid.innerHTML = "";
+        const rarityOrder = { SSR: 0, SR: 1, R: 2, N: 3 };
+        const sortedCollection = [...collectedIslands].sort((a, b) => {
+          const rarityDiff = rarityOrder[a.rarity] - rarityOrder[b.rarity];
+          if (rarityDiff !== 0) return rarityDiff;
+          return islands.findIndex((i) => i.name === a.name) - islands.findIndex((i) => i.name === b.name);
+        });
+
+        sortedCollection.forEach((island) => {
+          const islandEl = document.createElement("div");
+          islandEl.textContent = island.name;
+          const rarityClass = `rarity-${island.rarity.toLowerCase()}-bg`;
+          islandEl.className = `p-2 rounded-lg text-sm font-semibold truncate text-gray-700 ${rarityClass}`;
+          islandEl.title = `${island.rarity} - ${island.name}`;
+          collectionGrid.appendChild(islandEl);
+        });
+
+        collectionCount.textContent = collectedIslands.length;
+      }
+
+      // --- UI Update ---
+      function updateResultCard(island) {
+        initialState.classList.add("hidden");
+        resultState.classList.remove("hidden", "card-reveal");
+
+        // レアリティスタイル更新
+        resultCard.className = `backdrop-blur-sm rounded-2xl shadow-2xl p-6 min-h-[300px] flex flex-col justify-center items-center transition-all duration-300 relative rarity-${island.rarity.toLowerCase()}-bg`;
+        rarityDisplay.textContent = island.rarity;
+        rarityDisplay.className = `font-bold text-2xl mb-2 rarity-${island.rarity.toLowerCase()}-text`;
+
+        islandName.textContent = island.name;
+        islandPrefecture.textContent = island.prefecture;
+        islandDescription.textContent = island.description;
+        mapLink.href = `https://www.google.com/maps?q=${island.lat},${island.lon}&z=11`;
+
+        requestAnimationFrame(() => {
+          resultState.classList.add("card-reveal");
+        });
+      }
+
+      // --- Event Listeners ---
+      gachaButton.addEventListener("click", () => {
+        const selectedIsland = drawGacha();
+        const isNew = !collectedIslands.some((item) => item.name === selectedIsland.name);
+
+        if (isNew) {
+          collectedIslands.push(selectedIsland);
+          saveCollection();
+          renderCollection();
+          newBadge.classList.remove("hidden");
+        } else {
+          newBadge.classList.add("hidden");
+        }
+
+        updateResultCard(selectedIsland);
+      });
+
+      resetCollectionButton.addEventListener("click", () => {
+        confirmModal.classList.remove("hidden");
+      });
+
+      cancelResetButton.addEventListener("click", () => {
+        confirmModal.classList.add("hidden");
+      });
+
+      confirmModal.addEventListener("click", (e) => {
+        if (e.target === confirmModal) {
+          confirmModal.classList.add("hidden");
+        }
+      });
+
+      confirmResetButton.addEventListener("click", () => {
+        collectedIslands = [];
+        saveCollection();
+        renderCollection();
+        confirmModal.classList.add("hidden");
+      });
+
+      // --- Initialization ---
+      function init() {
+        totalCount.textContent = islands.length;
+        loadCollection();
+        renderCollection();
+      }
+
+      init();
+    </script>
+  </body>
+</html>
