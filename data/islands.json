@@ -1,0 +1,2261 @@
+[
+  {
+    "name": "利尻島",
+    "yomikata": "りしりとう",
+    "prefecture": "北海道",
+    "latitude": 45.18,
+    "longitude": 141.22,
+    "description": "北海道の北、日本海に浮かぶほぼ円形の火山島。中央にそびえる利尻山は「利尻富士」とも呼ばれる美しい姿で知られる。",
+    "rarity": 2
+  },
+  {
+    "name": "礼文島",
+    "yomikata": "れぶんとう",
+    "prefecture": "北海道",
+    "latitude": 45.38,
+    "longitude": 141.05,
+    "description": "日本最北の有人島。「花の浮島」の愛称で親しまれ、レブンアツモリソウなど固有の高山植物が咲き乱れる。",
+    "rarity": 2
+  },
+  {
+    "name": "焼尻島",
+    "yomikata": "やぎしりとう",
+    "prefecture": "北海道",
+    "latitude": 44.43,
+    "longitude": 141.69,
+    "description": "天売島の東に位置する島。オンコの原生林が広がり、島の約半分が国定公園に指定されている自然豊かな島。",
+    "rarity": 4
+  },
+  {
+    "name": "天売島",
+    "yomikata": "てうりとう",
+    "prefecture": "北海道",
+    "latitude": 44.44,
+    "longitude": 141.52,
+    "description": "ウトウやウミガラスなど、100万羽ともいわれる海鳥の繁殖地として世界的に有名。島全体が鳥たちの楽園となっている。",
+    "rarity": 4
+  },
+  {
+    "name": "奥尻島",
+    "yomikata": "おくしりとう",
+    "prefecture": "北海道",
+    "latitude": 42.17,
+    "longitude": 139.51,
+    "description": "渡島半島の西に浮かぶ。1993年の北海道南西沖地震で大きな被害を受けたが、復興を遂げた。ウニやアワビなどの海の幸が豊富。",
+    "rarity": 2
+  },
+  {
+    "name": "飛島",
+    "yomikata": "とびしま",
+    "prefecture": "山形県",
+    "latitude": 39.2,
+    "longitude": 139.56,
+    "description": "山形県唯一の有人離島。渡り鳥の中継地としてバードウォッチングが盛ん。独自の文化や風習が残る。",
+    "rarity": 4
+  },
+  {
+    "name": "佐渡島",
+    "yomikata": "さどがしま",
+    "prefecture": "新潟県",
+    "latitude": 38.05,
+    "longitude": 138.41,
+    "description": "日本海側最大の島。かつては金山で栄え、その遺跡は世界遺産候補。伝統芸能の「鬼太鼓」やたらい舟が有名。",
+    "rarity": 1
+  },
+  {
+    "name": "粟島",
+    "yomikata": "あわしま",
+    "prefecture": "新潟県",
+    "latitude": 38.46,
+    "longitude": 139.25,
+    "description": "馬の形に似ていることから「馬の島」とも呼ばれる。手つかずの自然が残り、釣りやダイビングのスポットとして人気。",
+    "rarity": 4
+  },
+  {
+    "name": "伊豆大島",
+    "yomikata": "いずおおしま",
+    "prefecture": "東京都",
+    "latitude": 34.73,
+    "longitude": 139.4,
+    "description": "伊豆諸島最大の島。活火山の三原山が島のシンボル。椿が有名で、毎年「椿まつり」が開催される。",
+    "rarity": 2
+  },
+  {
+    "name": "利島",
+    "yomikata": "としま",
+    "prefecture": "東京都",
+    "latitude": 34.52,
+    "longitude": 139.28,
+    "description": "伊豆諸島の一つで、島のほぼ全域が椿の木で覆われている。生産される椿油は最高品質として知られる。",
+    "rarity": 4
+  },
+  {
+    "name": "新島",
+    "yomikata": "にいじま",
+    "prefecture": "東京都",
+    "latitude": 34.38,
+    "longitude": 139.26,
+    "description": "白い砂浜が美しいサーフィンの名所。世界的に珍しいコーガ石を産出し、モヤイ像などの石の彫刻が点在する。",
+    "rarity": 3
+  },
+  {
+    "name": "式根島",
+    "yomikata": "しきねじま",
+    "prefecture": "東京都",
+    "latitude": 34.32,
+    "longitude": 139.21,
+    "description": "リアス式海岸の複雑な地形が特徴。温泉が豊富で、海中温泉の「地鉈温泉」など野趣あふれる温泉を楽しめる。",
+    "rarity": 4
+  },
+  {
+    "name": "神津島",
+    "yomikata": "こうづしま",
+    "prefecture": "東京都",
+    "latitude": 34.21,
+    "longitude": 139.14,
+    "description": "伊豆の神々が集まったという伝説が残る島。天上山からの眺めは絶景で、夜は美しい星空が広がる。",
+    "rarity": 3
+  },
+  {
+    "name": "三宅島",
+    "yomikata": "みやけじま",
+    "prefecture": "東京都",
+    "latitude": 34.08,
+    "longitude": 139.52,
+    "description": "活火山である雄山を中心に形成された島。火山の噴火によってできた独特の景観が見られる。バードウォッチングも盛ん。",
+    "rarity": 3
+  },
+  {
+    "name": "御蔵島",
+    "yomikata": "みくらじま",
+    "prefecture": "東京都",
+    "latitude": 33.88,
+    "longitude": 139.6,
+    "description": "島の周囲に野生のミナミハンドウイルカが生息しており、ドルフィンスイムが体験できることで世界的に有名。",
+    "rarity": 4
+  },
+  {
+    "name": "八丈島",
+    "yomikata": "はちじょうじま",
+    "prefecture": "東京都",
+    "latitude": 33.11,
+    "longitude": 139.79,
+    "description": "ひょうたんのような形をした火山島。「八丈富士」と「三原山」の二つの山がある。温暖な気候で、独特の食文化や黄八丈などの伝統工芸が残る。",
+    "rarity": 2
+  },
+  {
+    "name": "青ヶ島",
+    "yomikata": "あおがしま",
+    "prefecture": "東京都",
+    "latitude": 32.45,
+    "longitude": 139.76,
+    "description": "伊豆諸島最南端の有人島。二重カルデラという世界的にも珍しい地形で知られる。アクセスの困難さから「日本の秘境」と呼ばれる。",
+    "rarity": 5
+  },
+  {
+    "name": "父島",
+    "yomikata": "ちちじま",
+    "prefecture": "東京都",
+    "latitude": 27.09,
+    "longitude": 142.19,
+    "description": "小笠原諸島の中心となる島。東京から船で24時間かかる。独自の生態系が評価され世界自然遺産に登録されている。",
+    "rarity": 3
+  },
+  {
+    "name": "母島",
+    "yomikata": "ははじま",
+    "prefecture": "東京都",
+    "latitude": 26.65,
+    "longitude": 142.15,
+    "description": "父島からさらに船で2時間。より手つかずの自然が残っており、固有種の宝庫。静かな時間を過ごしたい人におすすめ。",
+    "rarity": 4
+  },
+  {
+    "name": "初島",
+    "yomikata": "はつしま",
+    "prefecture": "静岡県",
+    "latitude": 35.03,
+    "longitude": 139.17,
+    "description": "首都圏から最も近い離島として知られるリゾートアイランド。熱海港から高速船で約30分でアクセスできる。",
+    "rarity": 3
+  },
+  {
+    "name": "答志島",
+    "yomikata": "とうしじま",
+    "prefecture": "三重県",
+    "latitude": 34.52,
+    "longitude": 136.88,
+    "description": "鳥羽港の北東に位置する三重県最大の離島。漁業が盛んで、新鮮な海の幸を味わえる。独特の寝屋子制度という風習が残る。",
+    "rarity": 3
+  },
+  {
+    "name": "神島",
+    "yomikata": "かみしま",
+    "prefecture": "三重県",
+    "latitude": 34.54,
+    "longitude": 136.98,
+    "description": "三島由紀夫の小説「潮騒」の舞台として有名な島。伊良湖岬の沖合にあり、風光明媚な景観が広がる。",
+    "rarity": 4
+  },
+  {
+    "name": "坂手島",
+    "yomikata": "さかてじま",
+    "prefecture": "三重県",
+    "latitude": 34.48,
+    "longitude": 136.85,
+    "description": "鳥羽湾に浮かぶ小さな島。鳥羽港から定期船で数分とアクセスが良い。静かな漁村の風情が残る。",
+    "rarity": 4
+  },
+  {
+    "name": "菅島",
+    "yomikata": "すがしま",
+    "prefecture": "三重県",
+    "latitude": 34.5,
+    "longitude": 136.91,
+    "description": "日本最古級の洋式灯台である菅島灯台があることで知られる。海女漁が現在も行われている。",
+    "rarity": 3
+  },
+  {
+    "name": "日間賀島",
+    "yomikata": "ひまかじま",
+    "prefecture": "愛知県",
+    "latitude": 34.7,
+    "longitude": 136.99,
+    "description": "知多半島の先端に位置し、タコとフグが名物。「多幸の島」として親しまれている。名古屋から日帰りも可能な人気の観光地。",
+    "rarity": 2
+  },
+  {
+    "name": "篠島",
+    "yomikata": "しのじま",
+    "prefecture": "愛知県",
+    "latitude": 34.68,
+    "longitude": 137.01,
+    "description": "日間賀島の東にあり、「東海の松島」とも称される美しい景観を持つ。しらすが特産品として有名。",
+    "rarity": 3
+  },
+  {
+    "name": "佐久島",
+    "yomikata": "さくしま",
+    "prefecture": "愛知県",
+    "latitude": 34.72,
+    "longitude": 137.04,
+    "description": "三河湾に浮かぶアートの島。島内のいたるところに現代アート作品が展示されており、アート巡りを楽しめる。",
+    "rarity": 3
+  },
+  {
+    "name": "沖島",
+    "yomikata": "おきしま",
+    "prefecture": "滋賀県",
+    "latitude": 35.19,
+    "longitude": 136.05,
+    "description": "琵琶湖に浮かぶ日本で唯一の淡水湖にある有人島。車の走らない静かな島で、独特の漁村文化が息づいている。",
+    "rarity": 4
+  },
+  {
+    "name": "淡路島",
+    "yomikata": "あわじしま",
+    "prefecture": "兵庫県",
+    "latitude": 34.43,
+    "longitude": 134.85,
+    "description": "瀬戸内海最大の島。明石海峡大橋と大鳴門橋で本州・四国と結ばれている。国生み神話の舞台として知られ、観光地や農産物が豊富。",
+    "rarity": 1
+  },
+  {
+    "name": "沼島",
+    "yomikata": "ぬしま",
+    "prefecture": "兵庫県",
+    "latitude": 34.17,
+    "longitude": 134.82,
+    "description": "淡路島の南に位置する、国生み神話ゆかりの島。「おのころ島」とも伝わる。奇岩「上立神岩」がシンボル。",
+    "rarity": 4
+  },
+  {
+    "name": "家島",
+    "yomikata": "いえしま",
+    "prefecture": "兵庫県",
+    "latitude": 34.67,
+    "longitude": 134.53,
+    "description": "瀬戸内海に浮かぶ家島諸島の中心。採石業で栄え、独特の景観を持つ。新鮮な魚介類が魅力。",
+    "rarity": 3
+  },
+  {
+    "name": "坊勢島",
+    "yomikata": "ぼうぜじま",
+    "prefecture": "兵庫県",
+    "latitude": 34.65,
+    "longitude": 134.58,
+    "description": "家島諸島の一つで、漁業が非常に盛ん。人口密度が高いことで知られ、活気のある漁師町。",
+    "rarity": 3
+  },
+  {
+    "name": "男鹿島",
+    "yomikata": "たんがしま",
+    "prefecture": "兵庫県",
+    "latitude": 34.7,
+    "longitude": 134.57,
+    "description": "家島諸島最大の島。採石場跡地が広がり、独特の風景を作り出している。釣りや海水浴で人気。",
+    "rarity": 4
+  },
+  {
+    "name": "西島",
+    "yomikata": "にしじま",
+    "prefecture": "兵庫県",
+    "latitude": 34.68,
+    "longitude": 134.49,
+    "description": "家島諸島で2番目に大きい島。自然が多く残り、キャンプ場や海水浴場が整備されている。",
+    "rarity": 4
+  },
+  {
+    "name": "友ヶ島（沖ノ島）",
+    "yomikata": "ともがしま（おきのしま）",
+    "prefecture": "和歌山県",
+    "latitude": 34.28,
+    "longitude": 135.09,
+    "description": "紀淡海峡に浮かぶ無人島群の総称だが、沖ノ島には施設関係者が在住。旧日本軍の砲台跡が残り、アニメの世界のようだと人気。",
+    "rarity": 4
+  },
+  {
+    "name": "隠岐諸島（島後）",
+    "yomikata": "おきしょとう（どうご）",
+    "prefecture": "島根県",
+    "latitude": 36.24,
+    "longitude": 133.3,
+    "description": "隠岐諸島最大の島。雄大な自然景観が広がり、ユネスコ世界ジオパークに認定されている。後鳥羽上皇などが流された地としても有名。",
+    "rarity": 2
+  },
+  {
+    "name": "隠岐諸島（中ノ島）",
+    "yomikata": "おきしょとう（なかのしま）",
+    "prefecture": "島根県",
+    "latitude": 36.08,
+    "longitude": 133.1,
+    "description": "隠岐諸島・島前の中心。後鳥羽上皇の行在所跡など歴史的な名所が多い。キンニャモニャ祭りという独特の民謡で知られる。",
+    "rarity": 3
+  },
+  {
+    "name": "隠岐諸島（西ノ島）",
+    "yomikata": "おきしょとう（にしのしま）",
+    "prefecture": "島根県",
+    "latitude": 36.09,
+    "longitude": 133.0,
+    "description": "島前の西側に位置する。国賀海岸の断崖絶壁は圧巻のスケール。牛や馬が放牧されているのどかな風景も見られる。",
+    "rarity": 3
+  },
+  {
+    "name": "隠岐諸島（知夫里島）",
+    "yomikata": "おきしょとう（ちぶりじま）",
+    "prefecture": "島根県",
+    "latitude": 36.01,
+    "longitude": 133.03,
+    "description": "島前で最も小さい島。赤壁と呼ばれる赤い断崖が有名。タヌキが多く生息していることでも知られる。",
+    "rarity": 4
+  },
+  {
+    "name": "大根島",
+    "yomikata": "だいこんじま",
+    "prefecture": "島根県",
+    "latitude": 35.53,
+    "longitude": 133.17,
+    "description": "中海に浮かぶ火山島。本土とは堤防道路で結ばれている。牡丹と高麗人参の栽培が盛ん。",
+    "rarity": 1
+  },
+  {
+    "name": "江島",
+    "yomikata": "えしま",
+    "prefecture": "島根県",
+    "latitude": 35.53,
+    "longitude": 133.24,
+    "description": "中海に浮かぶ小さな島で、鳥取県境港市と結ぶ江島大橋（通称：ベタ踏み坂）で有名。",
+    "rarity": 2
+  },
+  {
+    "name": "犬島",
+    "yomikata": "いぬじま",
+    "prefecture": "岡山県",
+    "latitude": 34.62,
+    "longitude": 134.09,
+    "description": "銅の精錬所の跡地を再生した「犬島精錬所美術館」で知られるアートの島。人口は50人ほどで、静かな時間が流れる。",
+    "rarity": 5
+  },
+  {
+    "name": "石島",
+    "yomikata": "いしま",
+    "prefecture": "岡山県",
+    "latitude": 34.46,
+    "longitude": 133.68,
+    "description": "笠岡諸島の一つ。かつては採石で栄えた。現在は農業が中心で、穏やかな気候を生かしたスイートピー栽培が盛ん。",
+    "rarity": 4
+  },
+  {
+    "name": "北木島",
+    "yomikata": "きたぎしま",
+    "prefecture": "岡山県",
+    "latitude": 34.37,
+    "longitude": 133.55,
+    "description": "笠岡諸島で最大の島。良質な花崗岩「北木石」の産地として知られ、大阪城の石垣などにも使われている。",
+    "rarity": 3
+  },
+  {
+    "name": "高島",
+    "yomikata": "たかしま",
+    "prefecture": "岡山県",
+    "latitude": 34.42,
+    "longitude": 133.66,
+    "description": "笠岡諸島の一つ。神武天皇が立ち寄ったという伝説が残る。海水浴や釣りのスポットとして親しまれている。",
+    "rarity": 4
+  },
+  {
+    "name": "白石島",
+    "yomikata": "しらいしじま",
+    "prefecture": "岡山県",
+    "latitude": 34.38,
+    "longitude": 133.51,
+    "description": "国の名勝に指定されている美しい島。夏は海水浴客で賑わう。国の重要無形民俗文化財「白石踊」が伝わる。",
+    "rarity": 4
+  },
+  {
+    "name": "真鍋島",
+    "yomikata": "まなべしま",
+    "prefecture": "岡山県",
+    "latitude": 34.34,
+    "longitude": 133.5,
+    "description": "昔ながらの漁村の風景が色濃く残る島。映画のロケ地にもなったことがあり、ノスタルジックな雰囲気が魅力。",
+    "rarity": 4
+  },
+  {
+    "name": "六島",
+    "yomikata": "むしま",
+    "prefecture": "岡山県",
+    "latitude": 34.3,
+    "longitude": 133.53,
+    "description": "笠岡諸島の最南端に位置する。水仙の群生地として知られ、冬には島中が花の香りに包まれる。",
+    "rarity": 5
+  },
+  {
+    "name": "飛島",
+    "yomikata": "ひしま",
+    "prefecture": "岡山県",
+    "latitude": 34.43,
+    "longitude": 133.64,
+    "description": "笠岡港の南に位置する。大小二つの島が砂州でつながっており、干潮時には歩いて渡ることができる。",
+    "rarity": 4
+  },
+  {
+    "name": "松島",
+    "yomikata": "まつしま",
+    "prefecture": "岡山県",
+    "latitude": 34.45,
+    "longitude": 133.67,
+    "description": "笠岡諸島に属する小さな島。静かな環境で、のんびりと過ごすことができる。",
+    "rarity": 5
+  },
+  {
+    "name": "鹿久居島",
+    "yomikata": "かくいじま",
+    "prefecture": "岡山県",
+    "latitude": 34.78,
+    "longitude": 134.33,
+    "description": "岡山県最大の島。本土とは備前♡日生大橋で結ばれている。野生の鹿が生息している。",
+    "rarity": 2
+  },
+  {
+    "name": "頭島",
+    "yomikata": "かしらじま",
+    "prefecture": "岡山県",
+    "latitude": 34.76,
+    "longitude": 134.34,
+    "description": "日生諸島の一つで、鹿久居島と橋でつながっている。カキの養殖が盛んで、新鮮なカキ料理が楽しめる。",
+    "rarity": 3
+  },
+  {
+    "name": "大多府島",
+    "yomikata": "おおたぶじま",
+    "prefecture": "岡山県",
+    "latitude": 34.72,
+    "longitude": 134.34,
+    "description": "日生諸島の最南端。江戸時代に築かれた「燈籠堂」が残る。釣り人たちの間で人気のスポット。",
+    "rarity": 5
+  },
+  {
+    "name": "鴻島",
+    "yomikata": "こうじま",
+    "prefecture": "岡山県",
+    "latitude": 34.75,
+    "longitude": 134.3,
+    "description": "日生諸島の一つ。かつては別荘地として開発された歴史を持つ。静かなプライベートビーチが点在する。",
+    "rarity": 4
+  },
+  {
+    "name": "前島",
+    "yomikata": "まえじま",
+    "prefecture": "岡山県",
+    "latitude": 34.62,
+    "longitude": 134.18,
+    "description": "牛窓港からフェリーで約5分。「日本のエーゲ海」と称される牛窓の沖に浮かぶ。オリーブ園が広がる。",
+    "rarity": 3
+  },
+  {
+    "name": "黄島",
+    "yomikata": "きじま",
+    "prefecture": "岡山県",
+    "latitude": 34.6,
+    "longitude": 134.2,
+    "description": "前島の南に位置する小さな島。人口は少なく、静かな時間が流れる。",
+    "rarity": 5
+  },
+  {
+    "name": "黒島",
+    "yomikata": "くろしま",
+    "prefecture": "岡山県",
+    "latitude": 34.6,
+    "longitude": 134.21,
+    "description": "牛窓沖に浮かぶ3つの島（黒島、中ノ小島、端ノ小島）が干潮時に砂の道（黒島ヴィーナスロード）でつながる珍しい現象が見られる。",
+    "rarity": 5
+  },
+  {
+    "name": "向島",
+    "yomikata": "むかいしま",
+    "prefecture": "広島県",
+    "latitude": 34.39,
+    "longitude": 133.22,
+    "description": "尾道市の対岸に位置し、しまなみ海道が最初に渡る島。造船業が盛ん。映画のロケ地としても度々使われる。",
+    "rarity": 1
+  },
+  {
+    "name": "因島",
+    "yomikata": "いんのしま",
+    "prefecture": "広島県",
+    "latitude": 34.32,
+    "longitude": 133.17,
+    "description": "しまなみ海道沿線の島。村上水軍の拠点があったことで知られる。はっさく発祥の地であり、ポルノグラフィティの出身地としても有名。",
+    "rarity": 1
+  },
+  {
+    "name": "生口島",
+    "yomikata": "いくちじま",
+    "prefecture": "広島県",
+    "latitude": 34.28,
+    "longitude": 133.11,
+    "description": "国産レモンの生産量日本一を誇る。島全体が美術館のような「島ごと美術館」の取り組みで知られる。",
+    "rarity": 1
+  },
+  {
+    "name": "百島",
+    "yomikata": "ももしま",
+    "prefecture": "広島県",
+    "latitude": 34.39,
+    "longitude": 133.32,
+    "description": "尾道水道の南に位置する。アートのプロジェクトが盛んで、廃校を利用した美術館などがある。",
+    "rarity": 4
+  },
+  {
+    "name": "岩子島",
+    "yomikata": "いわしじま",
+    "prefecture": "広島県",
+    "latitude": 34.41,
+    "longitude": 133.25,
+    "description": "向島の西隣にあり、向島とは向島大橋で結ばれている。島の赤い岩肌が特徴的。",
+    "rarity": 3
+  },
+  {
+    "name": "細島",
+    "yomikata": "ほそしま",
+    "prefecture": "広島県",
+    "latitude": 34.41,
+    "longitude": 133.19,
+    "description": "因島の南西にある小さな島。静かな漁村の雰囲気を残している。",
+    "rarity": 4
+  },
+  {
+    "name": "佐木島",
+    "yomikata": "さぎしま",
+    "prefecture": "広島県",
+    "latitude": 34.36,
+    "longitude": 133.29,
+    "description": "三原市の沖合に浮かぶ。温暖な気候を利用した柑橘類の栽培が盛ん。トライアスロン大会が開催されることでも知られる。",
+    "rarity": 3
+  },
+  {
+    "name": "小佐木島",
+    "yomikata": "こさぎしま",
+    "prefecture": "広島県",
+    "latitude": 34.36,
+    "longitude": 133.34,
+    "description": "佐木島の東にある小さな島。人口は非常に少なく、手つかずの自然が残されている。",
+    "rarity": 5
+  },
+  {
+    "name": "大久野島",
+    "yomikata": "おおくのしま",
+    "prefecture": "広島県",
+    "latitude": 34.31,
+    "longitude": 132.99,
+    "description": "かつて毒ガス工場があった歴史を持つが、現在はたくさんの野生のウサギと触れ合える「うさぎ島」として国内外から観光客が訪れる。",
+    "rarity": 4
+  },
+  {
+    "name": "斎島",
+    "yomikata": "いつきしま",
+    "prefecture": "広島県",
+    "latitude": 34.15,
+    "longitude": 132.74,
+    "description": "古代から神の島として崇められてきた歴史を持つ。国の重要無形民俗文化財に指定されている「お祭り」が有名。",
+    "rarity": 5
+  },
+  {
+    "name": "江田島・能美島",
+    "yomikata": "えたじま・のうみじま",
+    "prefecture": "広島県",
+    "latitude": 34.23,
+    "longitude": 132.46,
+    "description": "元々は別の島だったが、現在は地続き。旧海軍兵学校があったことで知られる。オリーブやカキの栽培・養殖が盛ん。",
+    "rarity": 1
+  },
+  {
+    "name": "倉橋島",
+    "yomikata": "くらはしじま",
+    "prefecture": "広島県",
+    "latitude": 34.12,
+    "longitude": 132.53,
+    "description": "音戸大橋と早瀬大橋で本土と繋がっている。遣唐使船の寄港地であった歴史を持つ。「日本の渚百選」に選ばれた桂浜がある。",
+    "rarity": 1
+  },
+  {
+    "name": "鹿島",
+    "yomikata": "かしま",
+    "prefecture": "広島県",
+    "latitude": 34.05,
+    "longitude": 132.5,
+    "description": "倉橋島の南に位置し、鹿島大橋で結ばれている。製塩業で栄えた歴史がある。",
+    "rarity": 3
+  },
+  {
+    "name": "情島",
+    "yomikata": "なさけじま",
+    "prefecture": "広島県",
+    "latitude": 34.07,
+    "longitude": 132.61,
+    "description": "倉橋島の東に浮かぶ小さな島。平家の落人伝説が残る。猫が多く住む島としても知られる。",
+    "rarity": 5
+  },
+  {
+    "name": "大崎上島",
+    "yomikata": "おおさきかみじま",
+    "prefecture": "広島県",
+    "latitude": 34.24,
+    "longitude": 132.88,
+    "description": "芸予諸島に位置し、本土とは橋で繋がっていない。造船業が盛んで、温暖な気候を利用した柑橘類の栽培も行われている。",
+    "rarity": 2
+  },
+  {
+    "name": "長島",
+    "yomikata": "ながしま",
+    "prefecture": "広島県",
+    "latitude": 34.25,
+    "longitude": 132.84,
+    "description": "大崎上島の西にあり、長島大橋で結ばれている。国立ハンセン病療養所「大島青松園」がある。",
+    "rarity": 3
+  },
+  {
+    "name": "生野島",
+    "yomikata": "いくのしま",
+    "prefecture": "広島県",
+    "latitude": 34.28,
+    "longitude": 132.86,
+    "description": "大崎上島の北に位置する。かつては造船で栄えた。静かな暮らしが営まれている島。",
+    "rarity": 4
+  },
+  {
+    "name": "契島",
+    "yomikata": "ちぎりしま",
+    "prefecture": "広島県",
+    "latitude": 34.33,
+    "longitude": 132.96,
+    "description": "島全体が鉛の製錬工場となっており、その独特の景観から「軍艦島」に例えられることもある。関係者以外は上陸不可。",
+    "rarity": 5
+  },
+  {
+    "name": "大崎下島",
+    "yomikata": "おおさきしもじま",
+    "prefecture": "広島県",
+    "latitude": 34.19,
+    "longitude": 132.8,
+    "description": "安芸灘とびしま海道で本土と繋がっている。江戸時代の港町の風情が残る「御手洗地区」は国の重要伝統的建造物群保存地区。",
+    "rarity": 2
+  },
+  {
+    "name": "平羅島",
+    "yomikata": "へらしま",
+    "prefecture": "広島県",
+    "latitude": 34.18,
+    "longitude": 132.77,
+    "description": "大崎下島と中の島の間にある小さな島。とびしま海道の橋が通過している。",
+    "rarity": 5
+  },
+  {
+    "name": "中ノ島",
+    "yomikata": "なかのしま",
+    "prefecture": "広島県",
+    "latitude": 34.17,
+    "longitude": 132.76,
+    "description": "とびしま海道が通る島の一つ。キャンプ場などが整備されている。",
+    "rarity": 4
+  },
+  {
+    "name": "豊島",
+    "yomikata": "とよしま",
+    "prefecture": "広島県",
+    "latitude": 34.18,
+    "longitude": 132.73,
+    "description": "とびしま海道で結ばれた島の一つ。漁業や柑橘類の栽培が行われている。",
+    "rarity": 3
+  },
+  {
+    "name": "上蒲刈島",
+    "yomikata": "かみかまがりじま",
+    "prefecture": "広島県",
+    "latitude": 34.18,
+    "longitude": 132.7,
+    "description": "とびしま海道沿線にあり、安芸灘大橋で本土と接続。「県民の浜」という美しいビーチリゾートがある。",
+    "rarity": 2
+  },
+  {
+    "name": "下蒲刈島",
+    "yomikata": "しもかまがりじま",
+    "prefecture": "広島県",
+    "latitude": 34.21,
+    "longitude": 132.65,
+    "description": "とびしま海道の玄関口。朝鮮通信使に関する資料を展示する「松濤園」など、歴史的な見どころが多い。",
+    "rarity": 2
+  },
+  {
+    "name": "似島",
+    "yomikata": "にのしま",
+    "prefecture": "広島県",
+    "latitude": 34.32,
+    "longitude": 132.42,
+    "description": "広島港からフェリーで約20分。原爆投下時には臨時野戦病院が置かれた歴史を持つ。バウムクーヘンが日本で初めて作られた地でもある。",
+    "rarity": 3
+  },
+  {
+    "name": "金輪島",
+    "yomikata": "かなわじま",
+    "prefecture": "広島県",
+    "latitude": 34.36,
+    "longitude": 132.48,
+    "description": "広島港のすぐ沖に位置し、造船所がある。定期船はなく、関係者用の渡船のみが運航している。",
+    "rarity": 4
+  },
+  {
+    "name": "嚴島（宮島）",
+    "yomikata": "いつくしま（みやじま）",
+    "prefecture": "広島県",
+    "latitude": 34.28,
+    "longitude": 132.31,
+    "description": "日本三景の一つで、島全体が神域とされる。海に浮かぶ朱塗りの大鳥居で有名な嚴島神社は世界文化遺産。",
+    "rarity": 1
+  },
+  {
+    "name": "阿多田島",
+    "yomikata": "あたたじま",
+    "prefecture": "広島県",
+    "latitude": 34.17,
+    "longitude": 132.33,
+    "description": "大竹市の沖合に浮かぶ島。釣りの名所として知られ、多くの釣り客が訪れる。ハマチの養殖が盛ん。",
+    "rarity": 4
+  },
+  {
+    "name": "笠戸島",
+    "yomikata": "かさどしま",
+    "prefecture": "山口県",
+    "latitude": 33.98,
+    "longitude": 131.78,
+    "description": "下松市の沖に浮かび、笠戸大橋で本土と結ばれている。美しい海岸線が続き、瀬戸内海国立公園の一部。",
+    "rarity": 2
+  },
+  {
+    "name": "粭島",
+    "yomikata": "すくもじま",
+    "prefecture": "山口県",
+    "latitude": 33.95,
+    "longitude": 131.87,
+    "description": "周南市の徳山湾にあり、橋で本土と結ばれている。セメント工場など工業地帯の一部をなす。",
+    "rarity": 3
+  },
+  {
+    "name": "大津島",
+    "yomikata": "おおづしま",
+    "prefecture": "山口県",
+    "latitude": 34.02,
+    "longitude": 131.91,
+    "description": "周南市の沖合に位置する。太平洋戦争中、人間魚雷「回天」の訓練基地があった場所として知られ、記念館がある。",
+    "rarity": 4
+  },
+  {
+    "name": "牛島",
+    "yomikata": "うしま",
+    "prefecture": "山口県",
+    "latitude": 33.88,
+    "longitude": 132.06,
+    "description": "光市の沖合にある小さな島。昔ながらの漁村の風景が残っており、島固有の植物も見られる。",
+    "rarity": 5
+  },
+  {
+    "name": "祝島",
+    "yomikata": "いわいしま",
+    "prefecture": "山口県",
+    "latitude": 33.78,
+    "longitude": 131.95,
+    "description": "上関町の沖合に位置する。石垣で囲まれた練塀の集落が特徴的。千年続く神舞「神舞」が有名。",
+    "rarity": 4
+  },
+  {
+    "name": "八島",
+    "yomikata": "やしま",
+    "prefecture": "山口県",
+    "latitude": 33.8,
+    "longitude": 132.09,
+    "description": "上関町の沖合、祝島のさらに東にある。人口は非常に少ない。手つかずの自然が多く残されている。",
+    "rarity": 5
+  },
+  {
+    "name": "平郡島",
+    "yomikata": "へいぐんとう",
+    "prefecture": "山口県",
+    "latitude": 33.82,
+    "longitude": 132.22,
+    "description": "柳井市の南の沖合に浮かぶ、東西に長い島。二つの集落があり、それぞれ異なる文化を持つ。",
+    "rarity": 4
+  },
+  {
+    "name": "屋代島（周防大島）",
+    "yomikata": "やしろじま（すおうおおしま）",
+    "prefecture": "山口県",
+    "latitude": 33.92,
+    "longitude": 132.29,
+    "description": "大島大橋で本土と繋がる。「瀬戸内のハワイ」とも呼ばれる温暖な気候の島。みかん栽培が盛ん。",
+    "rarity": 1
+  },
+  {
+    "name": "笠佐島",
+    "yomikata": "かささじま",
+    "prefecture": "山口県",
+    "latitude": 33.94,
+    "longitude": 132.18,
+    "description": "周防大島の西に位置する。静かな漁村で、釣り人に人気がある。",
+    "rarity": 5
+  },
+  {
+    "name": "前島",
+    "yomikata": "まえじま",
+    "prefecture": "山口県",
+    "latitude": 33.95,
+    "longitude": 132.16,
+    "description": "周防大島の西に浮かぶ小さな島。人口は少なく、穏やかな時間が流れる。",
+    "rarity": 5
+  },
+  {
+    "name": "浮島",
+    "yomikata": "うかしま",
+    "prefecture": "山口県",
+    "latitude": 33.93,
+    "longitude": 132.42,
+    "description": "周防大島の東端、伊保田港の沖にある。名前の通り、海に浮かんでいるように見える。",
+    "rarity": 4
+  },
+  {
+    "name": "柱島",
+    "yomikata": "はしらじま",
+    "prefecture": "山口県",
+    "latitude": 34.02,
+    "longitude": 132.41,
+    "description": "岩国市の沖合に浮かぶ柱島群島の主島。太平洋戦争時、連合艦隊の泊地があったことで知られる。",
+    "rarity": 4
+  },
+  {
+    "name": "黒島",
+    "yomikata": "くろしま",
+    "prefecture": "山口県",
+    "latitude": 34.03,
+    "longitude": 132.45,
+    "description": "柱島群島の一つ。人口は少なく、静かな島。",
+    "rarity": 5
+  },
+  {
+    "name": "端島",
+    "yomikata": "はしま",
+    "prefecture": "山口県",
+    "latitude": 33.98,
+    "longitude": 132.44,
+    "description": "柱島群島の南端に位置する。島内には神社や史跡が残る。",
+    "rarity": 5
+  },
+  {
+    "name": "見島",
+    "yomikata": "みしま",
+    "prefecture": "山口県",
+    "latitude": 34.77,
+    "longitude": 131.15,
+    "description": "萩市の北西沖に浮かぶ山口県最北端の島。国の天然記念物である見島牛の産地。渡り鳥の重要な中継地でもある。",
+    "rarity": 3
+  },
+  {
+    "name": "相島",
+    "yomikata": "あいしま",
+    "prefecture": "山口県",
+    "latitude": 34.5,
+    "longitude": 131.28,
+    "description": "萩市の沖合にある島。スイカやブロッコリーの栽培が盛ん。江戸時代の朝鮮通信使の寄港地でもあった。",
+    "rarity": 4
+  },
+  {
+    "name": "大島",
+    "yomikata": "おおしま",
+    "prefecture": "山口県",
+    "latitude": 34.51,
+    "longitude": 131.22,
+    "description": "萩市の沖合に位置する。巻き網漁業の基地として栄えた。新鮮な魚介類が豊富。",
+    "rarity": 4
+  },
+  {
+    "name": "櫃島",
+    "yomikata": "ひつしま",
+    "prefecture": "山口県",
+    "latitude": 34.48,
+    "longitude": 131.06,
+    "description": "萩市の沖合、見島の南に浮かぶ小さな島。一本釣りの漁業が中心。",
+    "rarity": 5
+  },
+  {
+    "name": "角島",
+    "yomikata": "つのしま",
+    "prefecture": "山口県",
+    "latitude": 34.35,
+    "longitude": 130.85,
+    "description": "本土と角島大橋で結ばれており、その美しい景観は多くのCMや映画のロケ地となっている。白い砂浜とエメラルドグリーンの海が広がる。",
+    "rarity": 2
+  },
+  {
+    "name": "蓋井島",
+    "yomikata": "ふたおいじま",
+    "prefecture": "山口県",
+    "latitude": 34.09,
+    "longitude": 130.78,
+    "description": "下関市の沖合に位置する。島の形が鯨に似ていることから「鯨島」の別名もある。ツバキの自生地として知られる。",
+    "rarity": 4
+  },
+  {
+    "name": "六連島",
+    "yomikata": "むつれじま",
+    "prefecture": "山口県",
+    "latitude": 33.97,
+    "longitude": 130.87,
+    "description": "関門海峡の響灘側に浮かぶ。日本初の洋式灯台の一つである六連島灯台がある。花の栽培が盛ん。",
+    "rarity": 4
+  },
+  {
+    "name": "馬島",
+    "yomikata": "うましま",
+    "prefecture": "福岡県",
+    "latitude": 33.94,
+    "longitude": 130.98,
+    "description": "関門海峡に浮かぶ小島。人口は少なく、猫が多く住む島として知られている。",
+    "rarity": 5
+  },
+  {
+    "name": "藍島",
+    "yomikata": "あいのしま",
+    "prefecture": "福岡県",
+    "latitude": 33.96,
+    "longitude": 130.82,
+    "description": "北九州市小倉北区の沖合に浮かぶ。多くの猫が暮らす「猫の島」として有名になり、観光客が訪れる。",
+    "rarity": 4
+  },
+  {
+    "name": "地島",
+    "yomikata": "じのしま",
+    "prefecture": "福岡県",
+    "latitude": 33.84,
+    "longitude": 130.5,
+    "description": "宗像市の沖合にある。ヤブツバキの自生地として知られ、「椿の島」とも呼ばれる。",
+    "rarity": 4
+  },
+  {
+    "name": "大島",
+    "yomikata": "おおしま",
+    "prefecture": "福岡県",
+    "latitude": 33.9,
+    "longitude": 130.43,
+    "description": "「神宿る島」宗像・沖ノ島と関連遺産群の一部として世界遺産に登録された宗像大社中津宮がある。",
+    "rarity": 3
+  },
+  {
+    "name": "相島",
+    "yomikata": "あいのしま",
+    "prefecture": "福岡県",
+    "latitude": 33.76,
+    "longitude": 130.33,
+    "description": "新宮町の沖合にあり、CNNで「世界6大猫スポット」の一つに選ばれたことで世界的に有名になった猫の島。",
+    "rarity": 4
+  },
+  {
+    "name": "玄界島",
+    "yomikata": "げんかいじま",
+    "prefecture": "福岡県",
+    "latitude": 33.68,
+    "longitude": 130.23,
+    "description": "福岡市西区に属し、博多湾の沖に位置する。2005年の福岡県西方沖地震で大きな被害を受けたが、復興を遂げた。",
+    "rarity": 4
+  },
+  {
+    "name": "小呂島",
+    "yomikata": "おろのしま",
+    "prefecture": "福岡県",
+    "latitude": 33.87,
+    "longitude": 130.05,
+    "description": "福岡市西区に属する玄界灘の孤島。福岡市に属するが、地理的には佐賀県唐津市に近い。一本釣り漁業が盛ん。",
+    "rarity": 4
+  },
+  {
+    "name": "能古島",
+    "yomikata": "のこのしま",
+    "prefecture": "福岡県",
+    "latitude": 33.65,
+    "longitude": 130.3,
+    "description": "博多湾に浮かぶ、福岡市民の憩いの島。「のこのしまアイランドパーク」では四季折々の花が楽しめる。",
+    "rarity": 2
+  },
+  {
+    "name": "志賀島",
+    "yomikata": "しかのしま",
+    "prefecture": "福岡県",
+    "latitude": 33.68,
+    "longitude": 130.3,
+    "description": "砂州（海の中道）で九州本土と陸続きになっている。国宝「漢委奴国王」の金印が発見された地として有名。",
+    "rarity": 1
+  },
+  {
+    "name": "姫島",
+    "yomikata": "ひめしま",
+    "prefecture": "福岡県",
+    "latitude": 33.72,
+    "longitude": 129.93,
+    "description": "糸島市の沖合に浮かぶ。アスパラガス（姫島美人）の栽培で知られている。",
+    "rarity": 4
+  },
+  {
+    "name": "小川島",
+    "yomikata": "おがわしま",
+    "prefecture": "佐賀県",
+    "latitude": 33.58,
+    "longitude": 129.93,
+    "description": "唐津市の呼子港の沖にある。捕鯨の基地として栄えた歴史を持つ。ウニが名産。",
+    "rarity": 4
+  },
+  {
+    "name": "加唐島",
+    "yomikata": "かからしま",
+    "prefecture": "佐賀県",
+    "latitude": 33.6,
+    "longitude": 129.88,
+    "description": "椿油の生産が盛んで、「ツバキの島」として知られる。百済の王族が渡来したという伝説が残る。",
+    "rarity": 4
+  },
+  {
+    "name": "松島",
+    "yomikata": "まつしま",
+    "prefecture": "佐賀県",
+    "latitude": 33.62,
+    "longitude": 129.89,
+    "description": "加唐島の南東に位置する小さな島。猫が多いことでも知られている。",
+    "rarity": 5
+  },
+  {
+    "name": "馬渡島",
+    "yomikata": "まだらしま",
+    "prefecture": "佐賀県",
+    "latitude": 33.56,
+    "longitude": 129.77,
+    "description": "キリシタンの歴史を持つ島で、カトリック教会が島の中心にある。ブリの養殖などが盛ん。",
+    "rarity": 4
+  },
+  {
+    "name": "向島",
+    "yomikata": "むくしま",
+    "prefecture": "佐賀県",
+    "latitude": 33.55,
+    "longitude": 129.83,
+    "description": "馬渡島の南に浮かぶ。手つかずの自然が豊かで、釣り人に人気のスポット。",
+    "rarity": 5
+  },
+  {
+    "name": "高島",
+    "yomikata": "たかしま",
+    "prefecture": "佐賀県",
+    "latitude": 33.49,
+    "longitude": 129.99,
+    "description": "唐津市の唐津城から見える島。宝くじが当たると言われる「宝当神社」があり、多くの参拝客が訪れる。",
+    "rarity": 4
+  },
+  {
+    "name": "神集島",
+    "yomikata": "かしわじま",
+    "prefecture": "佐賀県",
+    "latitude": 33.46,
+    "longitude": 130.05,
+    "description": "神功皇后が朝鮮半島出兵の際に神々を集めて軍議を開いたという伝説が島名の由来。",
+    "rarity": 4
+  },
+  {
+    "name": "壱岐島",
+    "yomikata": "いきのしま",
+    "prefecture": "長崎県",
+    "latitude": 33.78,
+    "longitude": 129.71,
+    "description": "魏志倭人伝にも登場する歴史の古い島。多くの古墳や神社が点在する。「麦焼酎発祥の地」としても知られる。",
+    "rarity": 1
+  },
+  {
+    "name": "対馬島",
+    "yomikata": "つしまじま",
+    "prefecture": "長崎県",
+    "latitude": 34.33,
+    "longitude": 129.31,
+    "description": "九州と韓国の間に位置する国境の島。独自の生態系を持ち、ツシマヤマネコが生息する。古代から大陸との交流拠点であった。",
+    "rarity": 1
+  },
+  {
+    "name": "福島",
+    "yomikata": "ふくしま",
+    "prefecture": "長崎県",
+    "latitude": 33.37,
+    "longitude": 129.8,
+    "description": "松浦市に属し、福島大橋で佐賀県伊万里市と結ばれている。棚田の風景が美しい。",
+    "rarity": 2
+  },
+  {
+    "name": "鷹島",
+    "yomikata": "たかしま",
+    "prefecture": "長崎県",
+    "latitude": 33.43,
+    "longitude": 129.75,
+    "description": "松浦市に属し、鷹島肥前大橋で佐賀県唐津市と結ばれている。元寇の終焉の地として知られ、海底遺跡がある。",
+    "rarity": 2
+  },
+  {
+    "name": "黒島",
+    "yomikata": "くろしま",
+    "prefecture": "長崎県",
+    "latitude": 33.46,
+    "longitude": 129.82,
+    "description": "松浦市の沖合にある島。元寇にまつわる史跡が残されている。",
+    "rarity": 4
+  },
+  {
+    "name": "飛島",
+    "yomikata": "とびしま",
+    "prefecture": "長崎県",
+    "latitude": 33.44,
+    "longitude": 129.81,
+    "description": "松浦市の沖合、鷹島の近くに浮かぶ。二つの島が砂州でつながっている。",
+    "rarity": 4
+  },
+  {
+    "name": "青島",
+    "yomikata": "あおしま",
+    "prefecture": "長崎県",
+    "latitude": 33.37,
+    "longitude": 129.7,
+    "description": "松浦市の沖合にある。島の周囲は好漁場で、釣り人に人気がある。",
+    "rarity": 4
+  },
+  {
+    "name": "平戸島",
+    "yomikata": "ひらどしま",
+    "prefecture": "長崎県",
+    "latitude": 33.3,
+    "longitude": 129.47,
+    "description": "平戸大橋で本土と結ばれている。鎖国時代、オランダ商館が置かれた国際貿易港としての歴史を持つ。教会と寺院が共存する独特の風景が見られる。",
+    "rarity": 1
+  },
+  {
+    "name": "生月島",
+    "yomikata": "いきつきしま",
+    "prefecture": "長崎県",
+    "latitude": 33.38,
+    "longitude": 129.42,
+    "description": "平戸島の北西に位置し、生月大橋で結ばれている。隠れキリシタンの歴史が色濃く残る。断崖絶壁の海岸線が続く。",
+    "rarity": 2
+  },
+  {
+    "name": "高島",
+    "yomikata": "たかしま",
+    "prefecture": "長崎県",
+    "latitude": 33.37,
+    "longitude": 129.56,
+    "description": "平戸市の沖合にある。かつては捕鯨で栄えた。現在は農業が中心。",
+    "rarity": 4
+  },
+  {
+    "name": "的山大島",
+    "yomikata": "あづちおおしま",
+    "prefecture": "長崎県",
+    "latitude": 33.47,
+    "longitude": 129.48,
+    "description": "平戸市の北に位置する。神浦地区の港町は、国の重要伝統的建造物群保存地区に選定されている。",
+    "rarity": 3
+  },
+  {
+    "name": "度島",
+    "yomikata": "たくしま",
+    "prefecture": "長崎県",
+    "latitude": 33.42,
+    "longitude": 129.55,
+    "description": "平戸市の北に浮かぶ。島の形がイノシシに似ていることから「猪島」とも呼ばれる。漁業が盛ん。",
+    "rarity": 4
+  },
+  {
+    "name": "松島",
+    "yomikata": "まつしま",
+    "prefecture": "長崎県",
+    "latitude": 32.92,
+    "longitude": 129.79,
+    "description": "西海市の沖合にあり、松島大橋で本土と結ばれている。かつては炭鉱で栄え、現在は電源開発の火力発電所がある。",
+    "rarity": 3
+  },
+  {
+    "name": "池島",
+    "yomikata": "いけしま",
+    "prefecture": "長崎県",
+    "latitude": 32.88,
+    "longitude": 129.61,
+    "description": "九州最後の炭鉱があった島。閉山後も炭鉱施設の一部が保存され、往時の様子を伝えるツアーが人気。",
+    "rarity": 4
+  },
+  {
+    "name": "大島",
+    "yomikata": "おおしま",
+    "prefecture": "長崎県",
+    "latitude": 33.02,
+    "longitude": 129.62,
+    "description": "西海市に属し、大島大橋で本土と繋がっている。造船業が盛んな島。",
+    "rarity": 2
+  },
+  {
+    "name": "寺島",
+    "yomikata": "てらしま",
+    "prefecture": "長崎県",
+    "latitude": 33.0,
+    "longitude": 129.63,
+    "description": "大島の南にあり、寺島大橋で大島と繋がっている。",
+    "rarity": 3
+  },
+  {
+    "name": "蛎浦島",
+    "yomikata": "かきのうらしま",
+    "prefecture": "長崎県",
+    "latitude": 33.03,
+    "longitude": 129.64,
+    "description": "大島の北にあり、中戸大橋で大島と繋がっている。",
+    "rarity": 3
+  },
+  {
+    "name": "崎戸島",
+    "yomikata": "さきとしま",
+    "prefecture": "長崎県",
+    "latitude": 33.04,
+    "longitude": 129.58,
+    "description": "蛎浦島と橋で結ばれている。かつては炭鉱で栄えた歴史を持つ。",
+    "rarity": 3
+  },
+  {
+    "name": "江島",
+    "yomikata": "えのしま",
+    "prefecture": "長崎県",
+    "latitude": 32.85,
+    "longitude": 129.43,
+    "description": "五島列島の西に浮かぶ孤島。隠れキリシタンの歴史があり、潜伏キリシタン関連遺産の一部。",
+    "rarity": 5
+  },
+  {
+    "name": "平島",
+    "yomikata": "ひらしま",
+    "prefecture": "長崎県",
+    "latitude": 32.89,
+    "longitude": 129.46,
+    "description": "江島の北にある小さな島。人口は少なく、静かな漁村。",
+    "rarity": 5
+  },
+  {
+    "name": "高島",
+    "yomikata": "たかしま",
+    "prefecture": "長崎県",
+    "latitude": 32.65,
+    "longitude": 129.75,
+    "description": "長崎港の沖合にあり、石炭産業で栄えた。三菱財閥の創業者である岩崎彌太郎が事業を始めた地でもある。",
+    "rarity": 3
+  },
+  {
+    "name": "端島（軍艦島）",
+    "yomikata": "はしま（ぐんかんじま）",
+    "prefecture": "長崎県",
+    "latitude": 32.62,
+    "longitude": 129.73,
+    "description": "かつて海底炭鉱で栄え、日本初の鉄筋コンクリート造高層アパートが建てられた。現在は無人島だが、その独特の景観から世界遺産に登録され、上陸ツアーが人気。",
+    "rarity": 5
+  },
+  {
+    "name": "伊王島",
+    "yomikata": "いおうじま",
+    "prefecture": "長崎県",
+    "latitude": 32.7,
+    "longitude": 129.77,
+    "description": "伊王島大橋で本土と結ばれている。リゾート施設が整備され、観光地として人気を集めている。",
+    "rarity": 2
+  },
+  {
+    "name": "沖之島",
+    "yomikata": "おきのしま",
+    "prefecture": "長崎県",
+    "latitude": 32.7,
+    "longitude": 129.76,
+    "description": "伊王島の西にあり、橋で結ばれている。",
+    "rarity": 3
+  },
+  {
+    "name": "黒島",
+    "yomikata": "くろしま",
+    "prefecture": "長崎県",
+    "latitude": 33.13,
+    "longitude": 129.53,
+    "description": "佐世保市の沖合、九十九島の一つ。島の人口の多くがカトリック信者で、レンガ造りの黒島天主堂は国の重要文化財。「長崎と天草地方の潜伏キリシタン関連遺産」の一部。",
+    "rarity": 4
+  },
+  {
+    "name": "前島",
+    "yomikata": "まえじま",
+    "prefecture": "長崎県",
+    "latitude": 33.16,
+    "longitude": 129.62,
+    "description": "九十九島の一つで、有人島の中では最も本土に近い。",
+    "rarity": 4
+  },
+  {
+    "name": "鼕泊島",
+    "yomikata": "とうどまりじま",
+    "prefecture": "長崎県",
+    "latitude": 33.17,
+    "longitude": 129.62,
+    "description": "九十九島の一つ。前島と隣接している。",
+    "rarity": 4
+  },
+  {
+    "name": "高島",
+    "yomikata": "たかしま",
+    "prefecture": "長崎県",
+    "latitude": 33.15,
+    "longitude": 129.58,
+    "description": "九十九島の中で最大の面積を持つ島。",
+    "rarity": 4
+  },
+  {
+    "name": "上五島（中通島・若松島など）",
+    "yomikata": "かみごとう（なかどおりじま・わかまつじまなど）",
+    "prefecture": "長崎県",
+    "latitude": 32.98,
+    "longitude": 129.07,
+    "description": "五島列島の北部に位置する島々の総称。美しい教会が点在し、キリシタン文化が色濃く残る。五島うどんが名物。",
+    "rarity": 2
+  },
+  {
+    "name": "下五島（福江島・久賀島・奈留島など）",
+    "yomikata": "しもごとう（ふくえじま・ひさかじま・なるしまなど）",
+    "prefecture": "長崎県",
+    "latitude": 32.69,
+    "longitude": 128.84,
+    "description": "五島列島の南部に位置する島々の総称。最大の福江島は五島市の中心。鬼岳などの火山や美しいビーチ、歴史的な教会群など見どころが多い。",
+    "rarity": 1
+  },
+  {
+    "name": "小値賀島",
+    "yomikata": "おぢかじま",
+    "prefecture": "長崎県",
+    "latitude": 33.19,
+    "longitude": 129.07,
+    "description": "五島列島の北端に位置する。古民家を改装した宿泊施設での滞在が人気。ゆったりとした時間が流れる。",
+    "rarity": 3
+  },
+  {
+    "name": "大島",
+    "yomikata": "おおしま",
+    "prefecture": "長崎県",
+    "latitude": 33.2,
+    "longitude": 129.13,
+    "description": "小値賀島の東にある。牛の放牧が行われているのどかな島。",
+    "rarity": 4
+  },
+  {
+    "name": "斑島",
+    "yomikata": "まだらじま",
+    "prefecture": "長崎県",
+    "latitude": 33.22,
+    "longitude": 129.05,
+    "description": "小値賀島の北西にあり、斑大橋で結ばれている。玉石が敷き詰められた玉石鼻の海岸が有名。",
+    "rarity": 4
+  },
+  {
+    "name": "黒島",
+    "yomikata": "くろしま",
+    "prefecture": "長崎県",
+    "latitude": 33.16,
+    "longitude": 129.03,
+    "description": "小値賀島の西に浮かぶ。人口は少なく、静かな島。",
+    "rarity": 5
+  },
+  {
+    "name": "納島",
+    "yomikata": "のうしま",
+    "prefecture": "長崎県",
+    "latitude": 33.23,
+    "longitude": 129.11,
+    "description": "小値賀島の北東にある。鹿が多く生息している。",
+    "rarity": 5
+  },
+  {
+    "name": "六島",
+    "yomikata": "むしま",
+    "prefecture": "長崎県",
+    "latitude": 33.15,
+    "longitude": 129.16,
+    "description": "小値賀本島の東に位置する小さな島。",
+    "rarity": 5
+  },
+  {
+    "name": "野崎島",
+    "yomikata": "のざきじま",
+    "prefecture": "長崎県",
+    "latitude": 33.26,
+    "longitude": 129.13,
+    "description": "かつては集落があったが、現在はほぼ無人（職員が在住）。旧野首教会などが残り、「長崎と天草地方の潜伏キリシタン関連遺産」の一部。野生の鹿が暮らす。",
+    "rarity": 5
+  },
+  {
+    "name": "宇久島",
+    "yomikata": "うくじま",
+    "prefecture": "長崎県",
+    "latitude": 33.27,
+    "longitude": 129.12,
+    "description": "五島列島の最北端に位置する。平家の落人伝説が残る。牛の放牧が盛んで、広大な牧草地が広がる。",
+    "rarity": 3
+  },
+  {
+    "name": "寺島",
+    "yomikata": "てらしま",
+    "prefecture": "長崎県",
+    "latitude": 33.25,
+    "longitude": 129.16,
+    "description": "宇久島の南東にある。宇久島とは橋で結ばれている。",
+    "rarity": 4
+  },
+  {
+    "name": "天草上島",
+    "yomikata": "あまくさかみしま",
+    "prefecture": "熊本県",
+    "latitude": 32.45,
+    "longitude": 130.33,
+    "description": "天草諸島の東側に位置する。天草五橋で本土と結ばれている。イルカウォッチングが人気。",
+    "rarity": 1
+  },
+  {
+    "name": "天草下島",
+    "yomikata": "あまくさしもしま",
+    "prefecture": "熊本県",
+    "latitude": 32.33,
+    "longitude": 130.12,
+    "description": "天草諸島最大の島。天草・島原の乱の舞台であり、キリシタン文化が根強く残る。世界文化遺産「天草の崎津集落」がある。",
+    "rarity": 1
+  },
+  {
+    "name": "御所浦島",
+    "yomikata": "ごしょうらじま",
+    "prefecture": "熊本県",
+    "latitude": 32.33,
+    "longitude": 130.34,
+    "description": "天草諸島にあり、「恐竜の島」として知られる。日本最大級の肉食恐竜の化石などが発見されている。",
+    "rarity": 3
+  },
+  {
+    "name": "牧島",
+    "yomikata": "まきしま",
+    "prefecture": "熊本県",
+    "latitude": 32.35,
+    "longitude": 130.37,
+    "description": "御所浦島の東にあり、橋で結ばれている。化石採集体験ができる。",
+    "rarity": 4
+  },
+  {
+    "name": "横浦島",
+    "yomikata": "よこうらじま",
+    "prefecture": "熊本県",
+    "latitude": 32.32,
+    "longitude": 130.38,
+    "description": "御所浦島の南東に位置する。静かな漁村が広がる。",
+    "rarity": 4
+  },
+  {
+    "name": "維和島",
+    "yomikata": "いわじま",
+    "prefecture": "熊本県",
+    "latitude": 32.55,
+    "longitude": 130.45,
+    "description": "天草上島の北に位置し、橋で結ばれている。アオサの養殖や車エビの養殖が盛ん。",
+    "rarity": 3
+  },
+  {
+    "name": "樋島",
+    "yomikata": "ひのしま",
+    "prefecture": "熊本県",
+    "latitude": 32.38,
+    "longitude": 130.46,
+    "description": "天草上島の南東にあり、橋で結ばれている。夕日の名所として知られる。",
+    "rarity": 3
+  },
+  {
+    "name": "湯島",
+    "yomikata": "ゆしま",
+    "prefecture": "熊本県",
+    "latitude": 32.61,
+    "longitude": 130.35,
+    "description": "島原半島と天草諸島の間に浮かぶ。猫が多く暮らす「猫の島」として知られる。島原の乱では談合の場所になったとされる。",
+    "rarity": 4
+  },
+  {
+    "name": "戸馳島",
+    "yomikata": "とばせじま",
+    "prefecture": "熊本県",
+    "latitude": 32.58,
+    "longitude": 130.58,
+    "description": "宇土半島の先端にあり、橋で結ばれている。洋ランの栽培が盛んで、「花の島」として知られる。",
+    "rarity": 2
+  },
+  {
+    "name": "姫島",
+    "yomikata": "ひめしま",
+    "prefecture": "大分県",
+    "latitude": 33.72,
+    "longitude": 131.68,
+    "description": "国東半島の北に浮かぶ。アサギマダラの飛来地として有名。夏には盆踊りが行われ、キツネのお面をつけた踊りが見られる。",
+    "rarity": 3
+  },
+  {
+    "name": "保戸島",
+    "yomikata": "ほとじま",
+    "prefecture": "大分県",
+    "latitude": 32.96,
+    "longitude": 132.06,
+    "description": "津久見市の沖合にある。マグロの遠洋漁業の基地として栄えた。山の斜面に家々が密集して建ち並ぶ独特の景観を持つ。",
+    "rarity": 3
+  },
+  {
+    "name": "大入島",
+    "yomikata": "おおにゅうじま",
+    "prefecture": "大分県",
+    "latitude": 33.28,
+    "longitude": 131.81,
+    "description": "佐伯市の佐伯湾に浮かぶ。ひょうたんのような形をしており、リアス式海岸が美しい。島のあちこちで椿が見られる。",
+    "rarity": 3
+  },
+  {
+    "name": "屋形島",
+    "yomikata": "やかたじま",
+    "prefecture": "大分県",
+    "latitude": 33.15,
+    "longitude": 132.05,
+    "description": "佐伯市の蒲江港沖に浮かぶ。ヤギが放し飼いにされていることで知られる。",
+    "rarity": 5
+  },
+  {
+    "name": "深島",
+    "yomikata": "ふかしま",
+    "prefecture": "大分県",
+    "latitude": 32.98,
+    "longitude": 132.07,
+    "description": "佐伯市の沖合に浮かぶ、猫が多く住む島。サンゴ礁が発達しており、ダイビングスポットとしても人気。",
+    "rarity": 5
+  },
+  {
+    "name": "地島",
+    "yomikata": "じしま",
+    "prefecture": "大分県",
+    "latitude": 32.97,
+    "longitude": 132.04,
+    "description": "佐伯市の蒲江沖に浮かぶ小さな島。",
+    "rarity": 5
+  },
+  {
+    "name": "竹ヶ島",
+    "yomikata": "たけがしま",
+    "prefecture": "宮崎県",
+    "latitude": 31.79,
+    "longitude": 131.5,
+    "description": "青島の南に位置し、橋で本土と結ばれている。亜熱帯性植物が自生する。",
+    "rarity": 3
+  },
+  {
+    "name": "島野浦島",
+    "yomikata": "しまのうらしま",
+    "prefecture": "宮崎県",
+    "latitude": 32.61,
+    "longitude": 131.76,
+    "description": "延岡市の沖合に浮かぶ。イワシ漁が盛んで、「イワシの故郷」と呼ばれる。",
+    "rarity": 3
+  },
+  {
+    "name": "大島",
+    "yomikata": "おおしま",
+    "prefecture": "宮崎県",
+    "latitude": 31.52,
+    "longitude": 131.45,
+    "description": "日南市南郷町の沖合に浮かぶ。かつてはカツオ漁で栄えた。",
+    "rarity": 4
+  },
+  {
+    "name": "築島",
+    "yomikata": "つきしま",
+    "prefecture": "宮崎県",
+    "latitude": 31.45,
+    "longitude": 131.39,
+    "description": "串間市の沖合に位置する。真珠の養殖が行われている。",
+    "rarity": 4
+  },
+  {
+    "name": "甑島列島（上甑島・中甑島・下甑島）",
+    "yomikata": "こしきしまれっとう（かみこしきじま・なかこしきじま・しもこしきじま）",
+    "prefecture": "鹿児島県",
+    "latitude": 31.83,
+    "longitude": 129.88,
+    "description": "薩摩半島の西に浮かぶ列島。断崖絶壁の海岸線や奇岩など、壮大な景観が広がる。キビナゴ漁が盛ん。",
+    "rarity": 2
+  },
+  {
+    "name": "種子島",
+    "yomikata": "たねがしま",
+    "prefecture": "鹿児島県",
+    "latitude": 30.55,
+    "longitude": 130.96,
+    "description": "日本に初めて鉄砲が伝来した地として有名。日本最大のロケット発射場である「種子島宇宙センター」がある。",
+    "rarity": 1
+  },
+  {
+    "name": "馬毛島",
+    "yomikata": "まげしま",
+    "prefecture": "鹿児島県",
+    "latitude": 30.74,
+    "longitude": 130.85,
+    "description": "種子島の西に位置する。かつてはサトウキビ栽培などが行われていたが現在はほぼ無人。自衛隊の訓練基地として整備が進められている。",
+    "rarity": 5
+  },
+  {
+    "name": "屋久島",
+    "yomikata": "やくしま",
+    "prefecture": "鹿児島県",
+    "latitude": 30.35,
+    "longitude": 130.52,
+    "description": "樹齢数千年といわれる縄文杉をはじめとする屋久杉の原生林で知られる。日本で初めて世界自然遺産に登録された。",
+    "rarity": 1
+  },
+  {
+    "name": "口永良部島",
+    "yomikata": "くちのえらぶじま",
+    "prefecture": "鹿児島県",
+    "latitude": 30.44,
+    "longitude": 130.22,
+    "description": "屋久島の西に位置する活火山の島。島全体が国立公園に指定されており、温泉が豊富。",
+    "rarity": 4
+  },
+  {
+    "name": "硫黄島",
+    "yomikata": "いおうじま",
+    "prefecture": "鹿児島県",
+    "latitude": 30.79,
+    "longitude": 130.29,
+    "description": "薩摩硫黄島とも呼ばれる活火山の島。硫黄岳から噴煙が上がり、海岸は温泉の影響で黄色く変色している。",
+    "rarity": 4
+  },
+  {
+    "name": "黒島",
+    "yomikata": "くろしま",
+    "prefecture": "鹿児島県",
+    "latitude": 30.83,
+    "longitude": 130.2,
+    "description": "大隅諸島に属する。「牛の島」として知られ、黒牛の放牧が盛ん。",
+    "rarity": 4
+  },
+  {
+    "name": "竹島",
+    "yomikata": "たけしま",
+    "prefecture": "鹿児島県",
+    "latitude": 30.81,
+    "longitude": 130.42,
+    "description": "三島村に属する島。島全体が琉球竹（大名竹）に覆われていることが島名の由来。",
+    "rarity": 5
+  },
+  {
+    "name": "口之島",
+    "yomikata": "くちのしま",
+    "prefecture": "鹿児島県",
+    "latitude": 29.97,
+    "longitude": 129.92,
+    "description": "トカラ列島の玄関口となる島。野生牛が生息していることで知られる。",
+    "rarity": 4
+  },
+  {
+    "name": "中之島",
+    "yomikata": "なかのしま",
+    "prefecture": "鹿児島県",
+    "latitude": 29.85,
+    "longitude": 129.87,
+    "description": "トカラ列島で最大の島。活火山の御岳がそびえる。野生のトカラ馬を見ることができる。",
+    "rarity": 4
+  },
+  {
+    "name": "平島",
+    "yomikata": "たいらじま",
+    "prefecture": "鹿児島県",
+    "latitude": 29.68,
+    "longitude": 129.87,
+    "description": "トカラ列島のほぼ中央に位置する。平家の落人伝説が残る。",
+    "rarity": 5
+  },
+  {
+    "name": "諏訪之瀬島",
+    "yomikata": "すわのせじま",
+    "prefecture": "鹿児島県",
+    "latitude": 29.63,
+    "longitude": 129.71,
+    "description": "活発な活動を続ける活火山、御岳がある。噴火活動が日常的に見られる。",
+    "rarity": 5
+  },
+  {
+    "name": "悪石島",
+    "yomikata": "あくせきじま",
+    "prefecture": "鹿児島県",
+    "latitude": 29.46,
+    "longitude": 129.6,
+    "description": "仮面神ボゼの来訪で知られる秘境の島。独特の文化が色濃く残る。",
+    "rarity": 5
+  },
+  {
+    "name": "小宝島",
+    "yomikata": "こだからじま",
+    "prefecture": "鹿児島県",
+    "latitude": 29.22,
+    "longitude": 129.32,
+    "description": "隆起サンゴ礁でできた島。湯泊温泉など、海辺の温泉が名物。",
+    "rarity": 5
+  },
+  {
+    "name": "宝島",
+    "yomikata": "たからじま",
+    "prefecture": "鹿児島県",
+    "latitude": 29.14,
+    "longitude": 129.2,
+    "description": "トカラ列島の最南端。キャプテン・キッドの財宝伝説が残るロマンあふれる島。",
+    "rarity": 4
+  },
+  {
+    "name": "奄美大島",
+    "yomikata": "あまみおおしま",
+    "prefecture": "鹿児島県",
+    "latitude": 28.32,
+    "longitude": 129.49,
+    "description": "日本で2番目に大きい離島。アマミノクロウサギなど希少な動植物が生息する亜熱帯の森と、美しいサンゴ礁の海が広がる。世界自然遺産登録地。",
+    "rarity": 1
+  },
+  {
+    "name": "加計呂麻島",
+    "yomikata": "かけろまじま",
+    "prefecture": "鹿児島県",
+    "latitude": 28.12,
+    "longitude": 129.28,
+    "description": "奄美大島の南に位置する、細長い島。手つかずの自然と静かな集落が残り、映画「男はつらいよ」のロケ地にもなった。",
+    "rarity": 3
+  },
+  {
+    "name": "請島",
+    "yomikata": "うけじま",
+    "prefecture": "鹿児島県",
+    "latitude": 28.02,
+    "longitude": 129.26,
+    "description": "加計呂麻島の南にある。固有種のウケユリが自生する。",
+    "rarity": 5
+  },
+  {
+    "name": "与路島",
+    "yomikata": "よろしま",
+    "prefecture": "鹿児島県",
+    "latitude": 27.97,
+    "longitude": 129.17,
+    "description": "請島の西に位置する。サンゴの石垣が残る美しい集落がある。",
+    "rarity": 5
+  },
+  {
+    "name": "喜界島",
+    "yomikata": "きかいじま",
+    "prefecture": "鹿児島県",
+    "latitude": 28.31,
+    "longitude": 129.95,
+    "description": "奄美大島の東に位置する、サンゴ礁が隆起してできた島。今も年間約2mm隆起し続けている。サトウキビ栽培が盛ん。",
+    "rarity": 2
+  },
+  {
+    "name": "徳之島",
+    "yomikata": "とくのしま",
+    "prefecture": "鹿児島県",
+    "latitude": 27.78,
+    "longitude": 128.95,
+    "description": "闘牛が盛んで「牛なく島」として知られる。アマミノクロウサギも生息し、世界自然遺産の一部。長寿の島としても有名。",
+    "rarity": 1
+  },
+  {
+    "name": "沖永良部島",
+    "yomikata": "おきのえらぶじま",
+    "prefecture": "鹿児島県",
+    "latitude": 27.37,
+    "longitude": 128.59,
+    "description": "「花の島」として知られ、エラブユリやフリージアの栽培が盛ん。大小300以上の鍾乳洞があることでも有名。",
+    "rarity": 2
+  },
+  {
+    "name": "与論島",
+    "yomikata": "よろんじま",
+    "prefecture": "鹿児島県",
+    "latitude": 27.03,
+    "longitude": 128.42,
+    "description": "奄美群島の最南端に位置する。サンゴ礁に囲まれ、干潮時にだけ現れる砂浜「百合ヶ浜」は絶景。",
+    "rarity": 2
+  },
+  {
+    "name": "沖縄本島",
+    "yomikata": "おきなわほんとう",
+    "prefecture": "沖縄県",
+    "latitude": 26.45,
+    "longitude": 127.95,
+    "description": "沖縄県の中心となる最大の島。かつての琉球王国の中心地で、首里城などの世界遺産が点在する。美しい海と独自の文化が魅力。",
+    "rarity": 1
+  },
+  {
+    "name": "伊平屋島",
+    "yomikata": "いへやじま",
+    "prefecture": "沖縄県",
+    "latitude": 27.03,
+    "longitude": 127.97,
+    "description": "沖縄本島の北西に位置する。琉球王国を建国した第一尚氏王統の発祥の地とされる。",
+    "rarity": 3
+  },
+  {
+    "name": "野甫島",
+    "yomikata": "のほじま",
+    "prefecture": "沖縄県",
+    "latitude": 27.0,
+    "longitude": 127.93,
+    "description": "伊平屋島の南西にあり、野甫大橋で結ばれている。透明度の高い海が魅力。",
+    "rarity": 4
+  },
+  {
+    "name": "伊是名島",
+    "yomikata": "いぜなじま",
+    "prefecture": "沖縄県",
+    "latitude": 26.92,
+    "longitude": 127.94,
+    "description": "琉球王国第二尚氏王統の始祖、尚円王の出身地。伝統的な琉球家屋やフクギ並木が残る。",
+    "rarity": 3
+  },
+  {
+    "name": "伊江島",
+    "yomikata": "いえじま",
+    "prefecture": "沖縄県",
+    "latitude": 26.71,
+    "longitude": 127.79,
+    "description": "沖縄本島の本部港からフェリーで30分。島のシンボル「城山（タッチュー）」が特徴的。テッポウユリの一大産地。",
+    "rarity": 2
+  },
+  {
+    "name": "水納島",
+    "yomikata": "みんなしま",
+    "prefecture": "沖縄県",
+    "latitude": 26.65,
+    "longitude": 127.81,
+    "description": "本部町の沖合に浮かぶ、クロワッサンのような形をした小さな島。透明度の高い海は「みんなブルー」と称され、海水浴やダイビングに人気。",
+    "rarity": 4
+  },
+  {
+    "name": "瀬底島",
+    "yomikata": "せそこじま",
+    "prefecture": "沖縄県",
+    "latitude": 26.64,
+    "longitude": 127.86,
+    "description": "沖縄本島と瀬底大橋で結ばれている。天然の美しいビーチがあり、夕日の名所としても知られる。",
+    "rarity": 2
+  },
+  {
+    "name": "古宇利島",
+    "yomikata": "こうりじま",
+    "prefecture": "沖縄県",
+    "latitude": 26.7,
+    "longitude": 128.01,
+    "description": "古宇利大橋で本島と結ばれ、ドライブコースとして人気。「恋の島」とも呼ばれ、ハート型の岩「ハートロック」がある。",
+    "rarity": 2
+  },
+  {
+    "name": "屋我地島",
+    "yomikata": "やがじしま",
+    "prefecture": "沖縄県",
+    "latitude": 26.65,
+    "longitude": 128.0,
+    "description": "沖縄本島と橋で結ばれている。マングローブ林が広がり、自然観察が楽しめる。",
+    "rarity": 2
+  },
+  {
+    "name": "宮城島",
+    "yomikata": "みやぎじま",
+    "prefecture": "沖縄県",
+    "latitude": 26.38,
+    "longitude": 127.99,
+    "description": "海中道路で本島と結ばれた島の一つ。絶景スポット「果報バンタ」や、塩の工場がある。",
+    "rarity": 2
+  },
+  {
+    "name": "伊計島",
+    "yomikata": "いけいじま",
+    "prefecture": "沖縄県",
+    "latitude": 26.39,
+    "longitude": 128.03,
+    "description": "海中道路で繋がる島々の最も先にある。美しいビーチがあり、リゾートホテルも立地する。",
+    "rarity": 2
+  },
+  {
+    "name": "平安座島",
+    "yomikata": "へんざじま",
+    "prefecture": "沖縄県",
+    "latitude": 26.36,
+    "longitude": 127.97,
+    "description": "沖縄本島と海中道路で最初に結ばれる島。石油備蓄基地がある。",
+    "rarity": 2
+  },
+  {
+    "name": "浜比嘉島",
+    "yomikata": "はまひがしま",
+    "prefecture": "沖縄県",
+    "latitude": 26.33,
+    "longitude": 127.96,
+    "description": "平安座島と浜比嘉大橋で結ばれている。琉球開闢の神、アマミキヨとシネリキヨが住んだという伝説が残るパワースポット。",
+    "rarity": 2
+  },
+  {
+    "name": "津堅島",
+    "yomikata": "つけんじま",
+    "prefecture": "沖縄県",
+    "latitude": 26.25,
+    "longitude": 127.94,
+    "description": "うるま市の沖合に浮かぶ。ニンジンの産地として有名で「キャロットアイランド」の愛称を持つ。",
+    "rarity": 4
+  },
+  {
+    "name": "久高島",
+    "yomikata": "くだかじま",
+    "prefecture": "沖縄県",
+    "latitude": 26.17,
+    "longitude": 127.9,
+    "description": "琉球開闢の祖アマミキヨが天から降り立ったとされる「神の島」。沖縄でも特に神聖な場所とされ、多くの祭事が行われる。",
+    "rarity": 4
+  },
+  {
+    "name": "奥武島",
+    "yomikata": "おうじま",
+    "prefecture": "沖縄県",
+    "latitude": 26.12,
+    "longitude": 127.77,
+    "description": "南城市に属し、橋で本島と結ばれている。天ぷらが名物で、多くの観光客が訪れる。",
+    "rarity": 2
+  },
+  {
+    "name": "粟国島",
+    "yomikata": "あぐにじま",
+    "prefecture": "沖縄県",
+    "latitude": 26.58,
+    "longitude": 127.22,
+    "description": "映画「ナビィの恋」の舞台となった島。ソテツが多く自生している。ダイビングスポットとしても有名。",
+    "rarity": 4
+  },
+  {
+    "name": "渡名喜島",
+    "yomikata": "となきじま",
+    "prefecture": "沖縄県",
+    "latitude": 26.36,
+    "longitude": 127.15,
+    "description": "フクギ並木に囲まれた赤瓦の伝統的な集落が、国の重要伝統的建造物群保存地区に選定されている。",
+    "rarity": 4
+  },
+  {
+    "name": "久米島",
+    "yomikata": "くめじま",
+    "prefecture": "沖縄県",
+    "latitude": 26.34,
+    "longitude": 126.77,
+    "description": "琉球王朝時代には「球美の島」と称えられた美しい島。東洋一の美しさともいわれる砂浜だけの島「ハテの浜」が有名。",
+    "rarity": 2
+  },
+  {
+    "name": "奥武島",
+    "yomikata": "おうじま",
+    "prefecture": "沖縄県",
+    "latitude": 26.33,
+    "longitude": 126.83,
+    "description": "久米島の東にあり、新奥武橋で結ばれている。畳のような奇岩が広がる「畳石」は県の天然記念物。",
+    "rarity": 3
+  },
+  {
+    "name": "渡嘉敷島",
+    "yomikata": "とかしきじま",
+    "prefecture": "沖縄県",
+    "latitude": 26.19,
+    "longitude": 127.35,
+    "description": "慶良間諸島最大の島。「ケラマブルー」と称される世界有数の美しい海が広がり、ダイビングやシュノーケリングの聖地。",
+    "rarity": 3
+  },
+  {
+    "name": "座間味島",
+    "yomikata": "ざまみじま",
+    "prefecture": "沖縄県",
+    "latitude": 26.22,
+    "longitude": 127.3,
+    "description": "慶良間諸島の一つ。ミシュラン・グリーンガイド・ジャポンで二つ星を獲得した古座間味ビーチが有名。ホエールウォッチングも盛ん。",
+    "rarity": 3
+  },
+  {
+    "name": "阿嘉島",
+    "yomikata": "あかしま",
+    "prefecture": "沖縄県",
+    "latitude": 26.2,
+    "longitude": 127.27,
+    "description": "慶良間諸島の一つで、座間味島とは阿嘉大橋で結ばれている。映画「マリリンに逢いたい」の舞台。ケラマジカが生息する。",
+    "rarity": 4
+  },
+  {
+    "name": "慶留間島",
+    "yomikata": "げるまじま",
+    "prefecture": "沖縄県",
+    "latitude": 26.18,
+    "longitude": 127.28,
+    "description": "阿嘉島と慶留間橋で結ばれている。高良家住宅など、歴史的な建造物が残る。",
+    "rarity": 4
+  },
+  {
+    "name": "外地島",
+    "yomikata": "ふかじしま",
+    "prefecture": "沖縄県",
+    "latitude": 26.17,
+    "longitude": 127.29,
+    "description": "慶留間島と橋で結ばれており、慶良間空港がある。",
+    "rarity": 4
+  },
+  {
+    "name": "北大東島",
+    "yomikata": "きただいとうじま",
+    "prefecture": "沖縄県",
+    "latitude": 25.94,
+    "longitude": 131.29,
+    "description": "沖縄本島から東へ約360kmに位置する絶海の孤島。リン鉱石の採掘で栄えた歴史がある。",
+    "rarity": 4
+  },
+  {
+    "name": "南大東島",
+    "yomikata": "みなみだいとうじま",
+    "prefecture": "沖縄県",
+    "latitude": 25.84,
+    "longitude": 131.24,
+    "description": "日本で最初にサトウキビが栽培された地。独特の大東寿司やラム酒が名物。クレーンで人や荷物を吊り上げて上陸する。",
+    "rarity": 3
+  },
+  {
+    "name": "宮古島",
+    "yomikata": "みやこじま",
+    "prefecture": "沖縄県",
+    "latitude": 24.78,
+    "longitude": 125.32,
+    "description": "宮古ブルーと称される美しい海と白い砂浜が魅力。東洋一美しいと言われる与那覇前浜ビーチがある。トライアスロン大会でも有名。",
+    "rarity": 1
+  },
+  {
+    "name": "池間島",
+    "yomikata": "いけまじま",
+    "prefecture": "沖縄県",
+    "latitude": 24.93,
+    "longitude": 125.24,
+    "description": "宮古島と池間大橋で結ばれている。美しいサンゴ礁が広がるダイビングスポット「八重干瀬（やびじ）」への玄関口。",
+    "rarity": 2
+  },
+  {
+    "name": "大神島",
+    "yomikata": "おおがみじま",
+    "prefecture": "沖縄県",
+    "latitude": 24.91,
+    "longitude": 125.28,
+    "description": "宮古島の北に位置する、神の島として崇められている聖地。独自のルールがあり、観光客は立ち入り禁止の場所も多い。",
+    "rarity": 5
+  },
+  {
+    "name": "来間島",
+    "yomikata": "くりまじま",
+    "prefecture": "沖縄県",
+    "latitude": 24.72,
+    "longitude": 125.25,
+    "description": "宮古島と来間大橋で結ばれている。おしゃれなカフェや雑貨店が点在し、若者に人気。",
+    "rarity": 2
+  },
+  {
+    "name": "伊良部島",
+    "yomikata": "いらぶじま",
+    "prefecture": "沖縄県",
+    "latitude": 24.84,
+    "longitude": 125.18,
+    "description": "宮古島と伊良部大橋で結ばれている。美しいビーチやダイビングスポットが多く、特に「通り池」は国の名勝及び天然記念物。",
+    "rarity": 1
+  },
+  {
+    "name": "下地島",
+    "yomikata": "しもじしま",
+    "prefecture": "沖縄県",
+    "latitude": 24.81,
+    "longitude": 125.15,
+    "description": "伊良部島と隣接し、橋で繋がっている。パイロットの訓練飛行場があったことで知られ、現在は国際空港として利用されている。",
+    "rarity": 2
+  },
+  {
+    "name": "多良間島",
+    "yomikata": "たらまじま",
+    "prefecture": "沖縄県",
+    "latitude": 24.65,
+    "longitude": 124.7,
+    "description": "宮古島と石垣島の中間に位置する。国の重要無形民俗文化財である「八月踊り」が有名。",
+    "rarity": 3
+  },
+  {
+    "name": "水納島",
+    "yomikata": "みんなじま",
+    "prefecture": "沖縄県",
+    "latitude": 24.66,
+    "longitude": 124.78,
+    "description": "多良間島の北に浮かぶ小さな島。人口は数名で、牛の放牧が行われている。",
+    "rarity": 5
+  },
+  {
+    "name": "石垣島",
+    "yomikata": "いしがきじま",
+    "prefecture": "沖縄県",
+    "latitude": 24.42,
+    "longitude": 124.18,
+    "description": "八重山諸島の政治・経済・文化の中心。美しい海と豊かな自然が広がり、川平湾はミシュラン・グリーンガイドで三つ星を獲得。",
+    "rarity": 1
+  },
+  {
+    "name": "竹富島",
+    "yomikata": "たけとみじま",
+    "prefecture": "沖縄県",
+    "latitude": 24.32,
+    "longitude": 124.08,
+    "description": "石垣島から高速船で約10分。赤瓦の伝統的な家並みや白砂の道、水牛車観光で有名。国の重要伝統的建造物群保存地区。",
+    "rarity": 2
+  },
+  {
+    "name": "小浜島",
+    "yomikata": "こはまじま",
+    "prefecture": "沖縄県",
+    "latitude": 24.34,
+    "longitude": 123.97,
+    "description": "NHKの連続テレビ小説「ちゅらさん」の舞台となった島。サトウキビ畑が広がる一本道「シュガーロード」が有名。",
+    "rarity": 3
+  },
+  {
+    "name": "嘉弥真島",
+    "yomikata": "かやまじま",
+    "prefecture": "沖縄県",
+    "latitude": 24.35,
+    "longitude": 124.01,
+    "description": "小浜島の東にある小さな無人島だが、リゾート施設がありスタッフが在住。「うさぎの島」として知られている。",
+    "rarity": 5
+  },
+  {
+    "name": "黒島",
+    "yomikata": "くろしま",
+    "prefecture": "沖縄県",
+    "latitude": 24.23,
+    "longitude": 124.0,
+    "description": "ハートの形をしていることから「ハートアイランド」とも呼ばれる。人口よりも牛の数が多い「牛の島」として有名。",
+    "rarity": 4
+  },
+  {
+    "name": "新城島（上地）",
+    "yomikata": "あらぐすくじま（かみじ）",
+    "prefecture": "沖縄県",
+    "latitude": 24.22,
+    "longitude": 123.95,
+    "description": "パナリ島とも呼ばれる。定期船はなく、ツアーで訪れるのが一般的。かつては人魚（ジュゴン）伝説があった。",
+    "rarity": 5
+  },
+  {
+    "name": "新城島（下地）",
+    "yomikata": "あらぐすくじま（しもじ）",
+    "prefecture": "沖縄県",
+    "latitude": 24.23,
+    "longitude": 123.92,
+    "description": "上地島と対をなす島。こちらも定期船はない。手つかずの自然と美しい海が残る。",
+    "rarity": 5
+  },
+  {
+    "name": "西表島",
+    "yomikata": "いりおもてじま",
+    "prefecture": "沖縄県",
+    "latitude": 24.33,
+    "longitude": 123.82,
+    "description": "沖縄本島に次いで2番目に大きい島。島の9割が亜熱帯の原生林に覆われ、イリオモテヤマネコなど固有の生物が多く生息する世界自然遺産登録地。",
+    "rarity": 2
+  },
+  {
+    "name": "由布島",
+    "yomikata": "ゆぶじま",
+    "prefecture": "沖縄県",
+    "latitude": 24.34,
+    "longitude": 123.93,
+    "description": "西表島から水牛車で渡ることができる小さな島。島全体が亜熱帯植物園になっている。",
+    "rarity": 4
+  },
+  {
+    "name": "鳩間島",
+    "yomikata": "はとまじま",
+    "prefecture": "沖縄県",
+    "latitude": 24.47,
+    "longitude": 123.82,
+    "description": "西表島の北に浮かぶ。テレビドラマ「瑠璃の島」の舞台となった。サンゴ礁に囲まれた美しい島。",
+    "rarity": 5
+  },
+  {
+    "name": "波照間島",
+    "yomikata": "はてるまじま",
+    "prefecture": "沖縄県",
+    "latitude": 24.05,
+    "longitude": 123.77,
+    "description": "日本最南端の有人島。「ハテルマブルー」と称される海の美しさは格別。南十字星が観測できることでも知られる。",
+    "rarity": 4
+  },
+  {
+    "name": "与那国島",
+    "yomikata": "よなぐにじま",
+    "prefecture": "沖縄県",
+    "latitude": 24.46,
+    "longitude": 122.98,
+    "description": "日本最西端の有人島。台湾まで約111kmと、天気が良ければ台湾の山々が見える。海底遺跡と呼ばれる地形や、ヨナグニサン（世界最大の蛾）で有名。",
+    "rarity": 3
+  }
+]

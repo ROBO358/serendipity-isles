@@ -118,6 +118,7 @@
         <div id="initial-state" class="text-center">
           <div class="text-6xl mb-4 animate-bounce">🏝️</div>
           <p class="text-xl font-bold text-gray-700">ボタンを押して<br />ガチャを引いてみよう！</p>
+          <div id="loading-indicator" class="mt-4 text-blue-500 font-bold">島データをロード中...</div>
         </div>
         <div id="result-state" class="hidden text-center w-full h-full">
           <p id="rarity-display" class="font-bold text-2xl mb-2"></p>
@@ -131,6 +132,7 @@
 
       <footer class="mt-8">
         <button id="gacha-button" class="gacha-button bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-bold text-2xl py-4 px-10 rounded-full shadow-lg">ガチャを引く！</button>
+        <p id="error-message" class="mt-3 text-red-500 font-bold hidden">エラーが発生しました</p>
       </footer>
 
       <section class="mt-10 w-full max-w-md mx-auto">
@@ -154,69 +156,6 @@
     </div>
 
     <script>
-      // 日本の島データ（レアリティ付き）
-      const islands = [
-        // SSR
-        { name: "沖ノ島", prefecture: "福岡県", description: "島全体が宗像大社の神領で、「神の島」と呼ばれる。女人禁制など厳しい掟があり、2017年に世界遺産に登録。", lat: 34.24, lon: 130.1, rarity: "SSR" },
-        { name: "青ヶ島", prefecture: "東京都", description: "二重カルデラという世界的にも珍しい地形を持つ有人島。「日本の秘境」とも呼ばれます。", lat: 32.45, lon: 139.76, rarity: "SSR" },
-        { name: "軍艦島 (端島)", prefecture: "長崎県", description: "かつて炭鉱で栄えた無人島。その独特の景観から世界文化遺産に登録されています。", lat: 32.62, lon: 129.73, rarity: "SSR" },
-        { name: "南鳥島", prefecture: "東京都", description: "日本の最東端に位置する島。一般人の上陸は原則として許可されていません。", lat: 24.28, lon: 153.98, rarity: "SSR" },
-        { name: "沖ノ鳥島", prefecture: "東京都", description: "日本の最南端に位置する島。満潮時にはほとんどが海面下に沈むため、護岸工事で守られています。", lat: 20.42, lon: 136.08, rarity: "SSR" },
-        // SR
-        { name: "屋久島", prefecture: "鹿児島県", description: "樹齢数千年の縄文杉が有名。世界自然遺産にも登録されている神秘的な島です。", lat: 30.35, lon: 130.52, rarity: "SR" },
-        { name: "小笠原諸島 (父島)", prefecture: "東京都", description: "「東洋のガラパゴス」とも呼ばれる独自の生態系を持つ。ホエールウォッチングやドルフィンスイムが人気。", lat: 27.09, lon: 142.19, rarity: "SR" },
-        { name: "利尻島", prefecture: "北海道", description: "「利尻富士」とも呼ばれる美しい利尻山がそびえる島。ウニなどの海産物も絶品です。", lat: 45.18, lon: 141.21, rarity: "SR" },
-        { name: "与那国島", prefecture: "沖縄県", description: "日本最西端の島。海底遺跡ミステリーや、巨大なガ「ヨナグニサン」で知られています。", lat: 24.46, lon: 122.98, rarity: "SR" },
-        { name: "佐渡島", prefecture: "新潟県", description: "かつては金の島として栄えました。トキの野生復帰プロジェクトでも知られています。", lat: 38.03, lon: 138.35, rarity: "SR" },
-        { name: "西表島", prefecture: "沖縄県", description: "島の90%がジャングルに覆われた「東洋のガラパゴス」。特別天然記念物イリオモテヤマネコが生息。", lat: 24.33, lon: 123.83, rarity: "SR" },
-        { name: "友ヶ島", prefecture: "和歌山県", description: "旧日本軍の要塞跡が残る無人島群。レンガ造りの砲台跡が「ラピュタのようだ」と人気です。", lat: 34.28, lon: 135.0, rarity: "SR" },
-        { name: "大久野島", prefecture: "広島県", description: "「うさぎの島」として知られ、たくさんの野生のうさぎと触れ合えます。かつては毒ガス工場があった歴史も。", lat: 34.31, lon: 132.99, rarity: "SR" },
-        { name: "波照間島", prefecture: "沖縄県", description: "有人島としては日本最南端。「ハテルマブルー」と呼ばれる美しい海と、南十字星が見えることで有名。", lat: 24.05, lon: 123.77, rarity: "SR" },
-        // R
-        { name: "礼文島", prefecture: "北海道", description: "「花の浮島」として知られ、300種類以上の高山植物が咲き誇ります。", lat: 45.38, lon: 141.04, rarity: "R" },
-        { name: "厳島 (宮島)", prefecture: "広島県", description: "海に浮かぶ大鳥居で有名な厳島神社があります。日本三景の一つに数えられる景勝地です。", lat: 34.29, lon: 132.32, rarity: "R" },
-        { name: "直島", prefecture: "香川県", description: "アートの島として世界的に有名。草間彌生の「赤かぼちゃ」など、屋外アートが点在します。", lat: 34.45, lon: 133.99, rarity: "R" },
-        { name: "竹富島", prefecture: "沖縄県", description: "赤い瓦屋根の伝統的な集落と、水牛車での観光が有名。星砂の浜も人気スポットです。", lat: 24.32, lon: 124.08, rarity: "R" },
-        { name: "小豆島", prefecture: "香川県", description: "オリーブの栽培が盛んで、「エンジェルロード」は恋人たちの聖地として人気です。", lat: 34.48, lon: 134.25, rarity: "R" },
-        { name: "種子島", prefecture: "鹿児島県", description: "鉄砲伝来の地として歴史に名を刻む一方、日本最大のロケット発射場があります。", lat: 30.58, lon: 130.97, rarity: "R" },
-        { name: "奄美大島", prefecture: "鹿児島県", description: "アマミノクロウサギなど希少な固有種が生息する自然豊かな島。独特の島唄や大島紬も有名。", lat: 28.28, lon: 129.48, rarity: "R" },
-        { name: "宮古島", prefecture: "沖縄県", description: "「宮古ブルー」と称される透明度の高い海が魅力。伊良部大橋など絶景のドライブコースも人気。", lat: 24.76, lon: 125.33, rarity: "R" },
-        { name: "石垣島", prefecture: "沖縄県", description: "八重山諸島の玄関口。川平湾の美しい景色や、マングローブの森など豊かな自然が広がります。", lat: 24.34, lon: 124.15, rarity: "R" },
-        { name: "猿島", prefecture: "神奈川県", description: "東京湾に浮かぶ唯一の自然島。旧日本軍の要塞跡が残り、ラピュタのような世界が広がります。", lat: 35.29, lon: 139.66, rarity: "R" },
-        { name: "江の島", prefecture: "神奈川県", description: "湘南を代表する観光地。江島神社やシーキャンドルなど見どころ多数。", lat: 35.3, lon: 139.48, rarity: "R" },
-        { name: "角島", prefecture: "山口県", description: "エメラルドグリーンの海に架かる角島大橋の絶景で有名。多くの映画やCMのロケ地になっています。", lat: 34.35, lon: 130.84, rarity: "R" },
-        { name: "柏島", prefecture: "高知県", description: "船が宙に浮いて見えるほど透明度の高い海が魅力。日本有数のダイビングスポットです。", lat: 32.76, lon: 132.63, rarity: "R" },
-        { name: "田代島", prefecture: "宮城県", description: "「猫の島」として有名で、多くの猫が自由に暮らしています。猫神社もあります。", lat: 38.29, lon: 141.41, rarity: "R" },
-        { name: "青島", prefecture: "愛媛県", description: "住民の数より猫の数がはるかに多い「猫の楽園」として世界的に有名になりました。", lat: 33.82, lon: 132.46, rarity: "R" },
-        // N (上記以外すべて)
-        { name: "奥尻島", prefecture: "北海道", description: "1993年の北海道南西沖地震からの復興を遂げた島。ウニの味が良いことで有名。", lat: 42.16, lon: 139.46, rarity: "N" },
-        { name: "蕪島", prefecture: "青森県", description: "ウミネコの繁殖地として国の天然記念物に指定されています。陸続きの島です。", lat: 40.52, lon: 141.56, rarity: "N" },
-        { name: "金華山", prefecture: "宮城県", description: "島全体が黄金山神社の神域とされ、鹿が生息。「3年続けてお参りすればお金に困らない」という言い伝えも。", lat: 38.29, lon: 141.56, rarity: "N" },
-        { name: "飛島", prefecture: "山形県", description: "渡り鳥の中継地としてバードウォッチングが盛ん。山形県唯一の有人離島です。", lat: 39.2, lon: 139.56, rarity: "N" },
-        { name: "沖ノ島", prefecture: "千葉県", description: "南房総に位置し、砂州で陸続きになっている島。多様な海岸生物が観察できます。", lat: 34.97, lon: 139.85, rarity: "N" },
-        { name: "八丈島", prefecture: "東京都", description: "「八丈富士」と「三原山」の2つの火山からなる島。温泉や島寿司が楽しめます。", lat: 33.1, lon: 139.79, rarity: "N" },
-        { name: "粟島", prefecture: "新潟県", description: "「粟島浦村」として一つの村をなす島。馬がのんびりと草を食む牧歌的な風景が見られます。", lat: 38.45, lon: 139.24, rarity: "N" },
-        { name: "能登島", prefecture: "石川県", description: "能登半島と2つの橋で結ばれた島。水族館やガラス美術館などがあります。", lat: 37.1, lon: 136.98, rarity: "N" },
-        { name: "水島", prefecture: "福井県", description: "敦賀湾に浮かぶ無人島。透明度の高い海と白い砂浜から「北陸のハワイ」と呼ばれています。", lat: 35.73, lon: 136.0, rarity: "N" },
-        { name: "初島", prefecture: "静岡県", description: "首都圏から最も近い離島。リゾート施設が充実しており、手軽に島時間を楽しめます。", lat: 35.03, lon: 139.17, rarity: "N" },
-        { name: "日間賀島", prefecture: "愛知県", description: "「タコとフグの島」として有名。島の西港と東港には巨大なタコのモニュメントがあります。", lat: 34.7, lon: 136.98, rarity: "N" },
-        { name: "佐久島", prefecture: "愛知県", description: "アートの島として知られ、島のあちこちにアート作品が展示されています。", lat: 34.72, lon: 137.04, rarity: "N" },
-        { name: "答志島", prefecture: "三重県", description: "鳥羽港の沖合に浮かぶ、伊勢湾で最大の島。新鮮な海の幸と、独特の寝屋子制度で知られます。", lat: 34.52, lon: 136.86, rarity: "N" },
-        { name: "賢島", prefecture: "三重県", description: "英虞湾に浮かぶ、伊勢志摩観光の拠点。2016年にはG7伊勢志摩サミットが開催されました。", lat: 34.31, lon: 136.82, rarity: "N" },
-        { name: "沖島", prefecture: "滋賀県", description: "琵琶湖に浮かぶ日本で唯一の淡水湖にある有人島。島民の主な交通手段は自転車です。", lat: 35.21, lon: 136.05, rarity: "N" },
-        { name: "淡路島", prefecture: "兵庫県", description: "国生み神話ゆかりの島。玉ねぎの生産が盛んで、明石海峡大橋で本州と結ばれています。", lat: 34.45, lon: 134.8, rarity: "N" },
-        { name: "大三島", prefecture: "愛媛県", description: "「神の島」と呼ばれ、国宝の甲冑の約8割を所蔵する大山祇神社があります。しまなみ海道の島のひとつ。", lat: 34.24, lon: 133.0, rarity: "N" },
-        { name: "高島", prefecture: "佐賀県", description: "唐津市の沖に浮かぶ島。「宝当神社」があり、宝くじ当選のご利益があるとして多くの参拝者が訪れます。", lat: 33.49, lon: 129.97, rarity: "N" },
-        { name: "対馬", prefecture: "長崎県", description: "韓国まで約50kmの国境の島。独自の生態系と、古代からの歴史的な交流の跡が残っています。", lat: 34.25, lon: 129.28, rarity: "N" },
-        { name: "壱岐島", prefecture: "長崎県", description: "「魏志倭人伝」にも登場する歴史ある島。麦焼酎発祥の地とも言われています。", lat: 33.78, lon: 129.72, rarity: "N" },
-        { name: "福江島", prefecture: "長崎県", description: "五島列島の南西端に位置する最大の島。美しい教会群や、透き通った高浜海水浴場が有名。", lat: 32.68, lon: 128.84, rarity: "N" },
-        { name: "天草下島", prefecture: "熊本県", description: "天草諸島で最大の島。キリシタンの歴史が色濃く残り、イルカウォッチングも楽しめます。", lat: 32.37, lon: 130.1, rarity: "N" },
-        { name: "姫島", prefecture: "大分県", description: "黒曜石の産地として知られ、独特の盆踊り「姫島盆踊り」が有名です。", lat: 33.72, lon: 131.68, rarity: "N" },
-        { name: "青島", prefecture: "宮崎県", description: "「鬼の洗濯板」と呼ばれる奇岩に囲まれた島。亜熱帯植物が茂る島内には青島神社があります。", lat: 31.8, lon: 131.47, rarity: "N" },
-        { name: "与論島", prefecture: "鹿児島県", description: "「東洋の真珠」と称される美しい島。干潮時にだけ現れる砂浜「百合ヶ浜」は絶景です。", lat: 27.03, lon: 128.42, rarity: "N" },
-        { name: "沖縄本島", prefecture: "沖縄県", description: "沖縄県の中心で、那覇市や美しいビーチ、世界遺産の首里城跡など見どころが満載。", lat: 26.33, lon: 127.8, rarity: "N" },
-      ];
-
       // DOM Elements
       const gachaButton = document.getElementById("gacha-button");
       const resultCard = document.getElementById("result-card");
@@ -243,6 +182,55 @@
       let collectedIslands = [];
       const STORAGE_KEY = "islandGachaCollection";
 
+      // 日本の島データ
+      let islands = [];
+
+      // レアリティの数値からラベルへのマッピング
+      const rarityMapping = {
+        1: "SSR", // 最高レアリティ
+        2: "SR", // 高レアリティ
+        3: "R", // レア
+        4: "N", // ノーマル
+      };
+
+      // DOM 要素
+      const loadingIndicator = document.getElementById("loading-indicator");
+
+      // JSONファイルから島データを取得する
+      async function loadIslandsData() {
+        try {
+          const response = await fetch("data/islands.json");
+          if (!response.ok) {
+            throw new Error("島データの読み込みに失敗しました");
+          }
+          const data = await response.json();
+
+          // JSONデータを表示用に変換し、必要なプロパティがnullやundefinedでない項目だけを使用
+          islands = data
+            .filter((island) => island.name && island.prefecture)
+            .map((island) => ({
+              name: island.name,
+              prefecture: island.prefecture,
+              description: island.description,
+              lat: island.latitude,
+              lon: island.longitude,
+              rarity: rarityMapping[island.rarity],
+            }));
+
+          // 初期化完了後に表示を更新
+          totalCount.textContent = islands.length;
+          renderCollection();
+
+          // ロード完了後、ローディングインジケータを非表示にする
+          if (loadingIndicator) {
+            loadingIndicator.style.display = "none";
+          }
+        } catch (error) {
+          console.error("島データの読み込みエラー:", error);
+          alert("島データの読み込みに失敗しました。ページを再読み込みしてください。");
+        }
+      }
+
       // --- Gacha Logic ---
       function drawGacha() {
         const rarityTable = { SSR: 0.05, SR: 0.1, R: 0.2, N: 0.65 };
@@ -259,6 +247,13 @@
         }
 
         const islandsOfRarity = islands.filter((i) => i.rarity === selectedRarity);
+        // レアリティに該当する島がない場合は、別のレアリティから選択
+        if (islandsOfRarity.length === 0) {
+          const allIslands = islands;
+          const randomIndex = Math.floor(Math.random() * allIslands.length);
+          return allIslands[randomIndex];
+        }
+
         const randomIndex = Math.floor(Math.random() * islandsOfRarity.length);
         return islandsOfRarity[randomIndex];
       }
@@ -304,10 +299,22 @@
         rarityDisplay.textContent = island.rarity;
         rarityDisplay.className = `font-bold text-2xl mb-2 rarity-${island.rarity.toLowerCase()}-text`;
 
-        islandName.textContent = island.name;
-        islandPrefecture.textContent = island.prefecture;
-        islandDescription.textContent = island.description;
-        mapLink.href = `https://www.google.com/maps?q=${island.lat},${island.lon}&z=11`;
+        islandName.textContent = island.name || "名称不明";
+        islandPrefecture.textContent = island.prefecture || "";
+        islandDescription.textContent = island.description || "詳細情報はありません。";
+
+        // 緯度と経度の両方があれば地図リンクを有効に、なければ無効に
+        if (island.lat && island.lon) {
+          mapLink.href = `https://www.google.com/maps?q=${island.lat},${island.lon}&z=11`;
+          mapLink.classList.remove("opacity-50", "cursor-not-allowed");
+          mapLink.classList.add("hover:bg-blue-600");
+          mapLink.removeAttribute("disabled");
+        } else {
+          mapLink.href = "#";
+          mapLink.classList.add("opacity-50", "cursor-not-allowed");
+          mapLink.classList.remove("hover:bg-blue-600");
+          mapLink.setAttribute("disabled", "true");
+        }
 
         requestAnimationFrame(() => {
           resultState.classList.add("card-reveal");
@@ -316,19 +323,38 @@
 
       // --- Event Listeners ---
       gachaButton.addEventListener("click", () => {
-        const selectedIsland = drawGacha();
-        const isNew = !collectedIslands.some((item) => item.name === selectedIsland.name);
-
-        if (isNew) {
-          collectedIslands.push(selectedIsland);
-          saveCollection();
-          renderCollection();
-          newBadge.classList.remove("hidden");
-        } else {
-          newBadge.classList.add("hidden");
+        // 島データが読み込まれていない場合は早期リターン
+        if (islands.length === 0) {
+          document.getElementById("error-message").classList.remove("hidden");
+          document.getElementById("error-message").textContent = "島データが読み込まれていません。ページを再読み込みしてください。";
+          return;
         }
 
-        updateResultCard(selectedIsland);
+        try {
+          const selectedIsland = drawGacha();
+          if (!selectedIsland || !selectedIsland.name) {
+            throw new Error("有効な島データが取得できませんでした");
+          }
+
+          const isNew = !collectedIslands.some((item) => item.name === selectedIsland.name);
+
+          if (isNew) {
+            collectedIslands.push(selectedIsland);
+            saveCollection();
+            renderCollection();
+            newBadge.classList.remove("hidden");
+          } else {
+            newBadge.classList.add("hidden");
+          }
+
+          updateResultCard(selectedIsland);
+          // エラーメッセージを非表示
+          document.getElementById("error-message").classList.add("hidden");
+        } catch (error) {
+          console.error("ガチャ実行エラー:", error);
+          document.getElementById("error-message").classList.remove("hidden");
+          document.getElementById("error-message").textContent = "ガチャの実行中にエラーが発生しました。";
+        }
       });
 
       resetCollectionButton.addEventListener("click", () => {
@@ -353,12 +379,32 @@
       });
 
       // --- Initialization ---
-      function init() {
-        totalCount.textContent = islands.length;
-        loadCollection();
-        renderCollection();
+      async function init() {
+        try {
+          await loadIslandsData();
+          if (islands.length === 0) {
+            throw new Error("有効な島データが見つかりませんでした");
+          }
+
+          // ロード完了表示
+          gachaButton.disabled = false;
+          gachaButton.classList.remove("opacity-50", "cursor-not-allowed");
+
+          loadCollection();
+          renderCollection();
+        } catch (error) {
+          console.error("初期化エラー:", error);
+          loadingIndicator.textContent = "データの読み込みに失敗しました。再読み込みしてください。";
+          loadingIndicator.classList.remove("text-blue-500");
+          loadingIndicator.classList.add("text-red-500");
+
+          // ガチャボタンを無効化
+          gachaButton.disabled = true;
+          gachaButton.classList.add("opacity-50", "cursor-not-allowed");
+        }
       }
 
+      // 読み込み開始
       init();
     </script>
   </body>
