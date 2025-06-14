@@ -1,0 +1,128 @@
+/* Main styles for Japan Islands Gacha */
+body {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.card-reveal {
+  animation: reveal 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+@keyframes reveal {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.gacha-button {
+  transition: all 0.3s ease;
+}
+
+.gacha-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gacha-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.modal-enter {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* SSR背景のアニメーション */
+@keyframes rainbow-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* レアリティごとの背景スタイル */
+.rarity-n-bg {
+  background-color: #f8fafc; /* slate-50 */
+}
+
+.rarity-r-bg {
+  background: linear-gradient(135deg, #d1fae5, #ffffff); /* green-100 to white */
+}
+
+.rarity-sr-bg {
+  background: linear-gradient(135deg, #fef08a, #fef9c3); /* yellow-200 to yellow-100 */
+}
+
+.rarity-ssr-bg {
+  background: linear-gradient(-45deg, #fbcfe8, #a5b4fc, #81e6d9, #fef08a);
+  background-size: 400% 400%;
+  animation: rainbow-flow 8s ease infinite;
+}
+
+.rarity-n-text {
+  color: #64748b; /* slate-500 */
+}
+
+.rarity-r-text {
+  color: #059669; /* green-600 */
+}
+
+.rarity-sr-text {
+  color: #b45309; /* amber-700 */
+}
+
+.rarity-ssr-text {
+  color: white;
+  font-weight: 900;
+  text-shadow: 0 0 8px #ffd700, 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.rarity-r-text {
+  color: #059669; /* green-600 */
+}
+
+.rarity-sr-text {
+  color: #b45309; /* amber-700 */
+}
+
+.rarity-ssr-text {
+  color: white;
+  font-weight: 900;
+  text-shadow: 0 0 8px #ffd700, 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
